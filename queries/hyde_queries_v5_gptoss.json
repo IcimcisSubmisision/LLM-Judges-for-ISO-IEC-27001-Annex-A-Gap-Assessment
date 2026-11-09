@@ -1,0 +1,565 @@
+{
+ "_model": "gpt-oss:120b-cloud",
+ "_temperature": 0,
+ "_prompt": "You write example text for a search index. ISO/IEC 27001:2022 Annex A control {cid} '{title}': {text}\n\nWrite 4 short, different sentences (max 30 words each) as they would appear in a company's information security policy, procedure, register or table and that would show this control is implemented. Use the concrete words organisations use for it (roles, systems, records, steps, frequencies), not the wording of the control. Do not mention ISO, Annex A or the control number. Output only a JSON list of 4 strings.",
+ "queries": {
+  "ISO_A_5.1": [
+   "The CISO approves the Information Security Policy annually, and the policy is posted on the intranet for all employees to read and sign acknowledgment.",
+   "All department heads must ensure their specific security procedures are reviewed every 12 months and any material changes are recorded in the Security Procedure Register.",
+   "The IT security team updates the access control list quarterly in the Identity Management System and logs the changes in the Change Management Database.",
+   "Employees acknowledge receipt of the policy via the annual e‑learning module; acknowledgments are stored in the HR Records System and reviewed by internal audit each year."
+  ],
+  "ISO_A_5.2": [
+   "The CISO is responsible for approving all access control changes and reviews them quarterly in the Access Management System.",
+   "Each department appoints a Data Protection Officer who records security incidents in the Incident Register within 24 hours of occurrence.",
+   "System owners must conduct annual risk assessments and update the Risk Treatment Plan in the Governance Portal by 31 December each year.",
+   "The IT security team reviews user access rights monthly and documents any revocations in the Access Review Log."
+  ],
+  "ISO_A_5.3": [
+   "The system administrator role cannot approve purchase orders; a separate finance approver must review and sign off on all procurement transactions.",
+   "User access changes are logged, and the change request must be authorized by a manager distinct from the IT security team.",
+   "Monthly reconciliation of privileged account usage is performed by the internal audit function, independent of the account provisioning team.",
+   "Backup restoration tests are executed by the disaster‑recovery coordinator, while backup schedule configuration remains the responsibility of the storage administrator."
+  ],
+  "ISO_A_5.4": [
+   "All employees must follow the Information Security Policy and related procedural documents, with annual acknowledgment recorded in the HR compliance system.",
+   "Department heads review and sign off on quarterly security checklists to confirm staff adherence to role‑specific security procedures.",
+   "The IT security team logs each user’s access‑control training completion in the central audit register, updating records within 48 hours of completion.",
+   "Managers conduct monthly spot audits of workstation configurations to ensure compliance with the approved baseline security settings."
+  ],
+  "ISO_A_5.5": [
+   "The Chief Information Security Officer (CISO) shall maintain a quarterly contact log with the national data protection authority, documenting meeting dates, topics, and follow‑up actions.",
+   "The Security Incident Response Team updates the external liaison register after each interaction with law‑enforcement agencies, recording contact person, phone, email, and response time.",
+   "A bi‑annual review is performed by the Compliance Manager to verify that all required notifications to regulatory bodies have been filed and acknowledged.",
+   "All external audit findings are forwarded within five business days to the designated Legal Counsel, who contacts the appropriate authority for clarification if needed."
+  ],
+  "ISO_A_5.6": [
+   "The CISO reviews quarterly membership in the ISACA and (ISC)² forums and records attendance in the Security Engagement Register.",
+   "The Security Team maintains a contact list of industry CERTs and specialist groups, updated monthly in the Threat Intelligence Database.",
+   "All staff are required to submit summaries of relevant security webinars to the Knowledge Sharing portal within two weeks of participation.",
+   "The Risk Management Office schedules bi‑annual meetings with the National Cyber Security Alliance and logs minutes in the Stakeholder Interaction Log."
+  ],
+  "ISO_A_5.7": [
+   "The Threat Intelligence Team collects external threat feeds weekly and records findings in the Threat Intelligence Database.",
+   "The Security Operations Center reviews the Threat Intelligence Database daily and escalates relevant indicators to the Incident Response Manager.",
+   "All new vulnerability alerts are logged in the Threat Register within 24 hours and assigned a risk rating by the Vulnerability Analyst.",
+   "Quarterly threat‑intel briefings are presented by the Threat Intelligence Lead to senior management and documented in the Board Security Report."
+  ],
+  "ISO_A_5.8": [
+   "Project managers must complete a security risk assessment checklist before project approval and update it quarterly.",
+   "The Information Security Officer reviews and signs off on all project charters to ensure security requirements are defined.",
+   "All project deliverables are stored in the encrypted repository and logged in the Project Security Register with version control.",
+   "Security controls are validated during each project phase gate review, with findings recorded in the Project Risk Log and mitigated within two weeks."
+  ],
+  "ISO_A_5.9": [
+   "The Asset Register, maintained by the Information Asset Owner, lists all information assets, associated hardware, software, and data classifications, updated quarterly.",
+   "Each department submits a monthly asset inventory report to the Security Team, confirming ownership, location, and protection status of all records and systems.",
+   "The Data Custodian reviews and validates the asset list bi‑annually, ensuring any new applications or databases are recorded with designated owners.",
+   "A change‑management workflow requires that any addition, removal, or reclassification of information assets be logged in the central register within 5 business days."
+  ],
+  "ISO_A_5.10": [
+   "All employees must obtain written approval from the Information Security Manager before installing or using any software on corporate devices.",
+   "The Acceptable Use Register, reviewed quarterly by the IT Governance Committee, records permitted and prohibited activities for each asset class.",
+   "Network access logs are archived for 12 months and audited monthly by the Compliance Officer to verify adherence to usage policies.",
+   "Any violation of the usage policy triggers a documented incident response, including notification of the Data Owner and remediation steps within five business days."
+  ],
+  "ISO_A_5.11": [
+   "HR must collect all laptops, mobile devices, and access cards from departing employees on their last working day.",
+   "The IT department disables user accounts and retrieves encryption keys within 24 hours of contract termination.",
+   "Managers sign off on the Asset Return Checklist confirming return of all physical and digital assets before final settlement.",
+   "A quarterly audit verifies that all former contractors have returned assigned assets and that records are archived in the Asset Register."
+  ],
+  "ISO_A_5.12": [
+   "The Data Owner classifies each data asset using the Confidentiality‑Integrity‑Availability matrix and records the classification in the Information Asset Register quarterly.",
+   "The Information Security Manager reviews classification levels during the annual risk assessment and updates the classification log for any new or changed business requirements.",
+   "All new records entered into the Document Management System must be tagged with a confidentiality level selected by the Record Custodian before they are made accessible.",
+   "The IT Service Desk verifies that backup files are labeled with their availability classification and conducts a monthly audit to ensure compliance with the defined recovery time objectives."
+  ],
+  "ISO_A_5.13": [
+   "The Information Owner assigns a classification label to each document using the Data Classification Tool before distribution.",
+   "The Records Management team reviews and updates labeling guidelines quarterly, ensuring alignment with the approved classification matrix.",
+   "All email attachments are automatically tagged with the appropriate sensitivity label by the DLP system upon sending.",
+   "The Security Officer conducts monthly audits of labeled assets to verify correct label application and removal of outdated labels."
+  ],
+  "ISO_A_5.14": [
+   "The Data Transfer Owner must approve all outbound file transfers and document the approval in the Transfer Request Log before execution.",
+   "All electronic transfers between business units use the encrypted channel configured in the Secure Transfer System and are logged daily by the IT Operations team.",
+   "External partners receive data only after signing the Data Transfer Agreement, which is stored in the Contract Management Repository and reviewed annually.",
+   "Quarterly, the Information Security Manager conducts a compliance audit of transfer procedures, records findings in the Transfer Compliance Register, and updates controls as needed."
+  ],
+  "ISO_A_5.15": [
+   "The Information Security Manager authorizes all user access rights in the Identity Management System, reviewed quarterly against business need.",
+   "Physical entry to the data centre requires badge and biometric verification; access logs are retained for 90 days and audited monthly.",
+   "All privileged accounts must be approved by the Department Head, provisioned via the privileged access management tool, and reviewed semi‑annually.",
+   "Remote access is granted only through VPN with multi‑factor authentication; connection attempts are recorded in the security information and event management system."
+  ],
+  "ISO_A_5.16": [
+   "The Identity Management Team reviews user account creation requests weekly and updates the Access Control System accordingly.",
+   "All employee role changes are recorded in the HR system and reflected in the authentication directory within 24 hours.",
+   "User access revocation is performed by the IT Security Officer upon termination, with confirmation logged in the Identity Lifecycle Register.",
+   "Periodic audits of active accounts are conducted quarterly to verify compliance with defined role permissions."
+  ],
+  "ISO_A_5.17": [
+   "The Identity Management Team reviews and updates all user credentials in the IAM system quarterly, documenting changes in the Authentication Log.",
+   "System administrators must store passwords in the encrypted password vault and prohibit sharing via email or unsecured channels.",
+   "New hires receive a briefing on credential handling procedures from HR, and sign the Authentication Handling Acknowledgement within two business days.",
+   "The Security Officer conducts monthly audits of the authentication database, verifying that deactivated accounts are removed and documenting findings in the Audit Register."
+  ],
+  "ISO_A_5.18": [
+   "The Access Management Team reviews user access rights in the IAM system quarterly and updates records in the Access Rights Register.",
+   "Managers must submit a change request in the ticketing system for any modification of role permissions, approved by the Information Security Officer.",
+   "All terminated employees have their accounts disabled and removed from all applications within 24 hours, documented in the Deprovisioning Log.",
+   "Access rights are assigned based on the principle of least privilege, using predefined role templates stored in the Role Definition Database."
+  ],
+  "ISO_A_5.19": [
+   "The Procurement Manager must complete a Supplier Security Assessment before any contract award and record findings in the Supplier Risk Register.",
+   "All third‑party service agreements shall include a clause requiring annual security audits, with results uploaded to the Central Compliance Portal.",
+   "The Information Security Team reviews supplier incident reports within 48 hours and updates the Supplier Incident Log accordingly.",
+   "Quarterly, the Risk Committee evaluates the Supplier Risk Register, escalates high‑risk vendors, and documents mitigation actions in the Risk Treatment Plan."
+  ],
+  "ISO_A_5.20": [
+   "The Procurement Manager shall include specific information security clauses in all supplier contracts, reviewed annually for compliance.",
+   "A Supplier Security Register records each vendor’s risk rating, required controls, and the date of the last security assessment.",
+   "The Information Security Officer conducts quarterly reviews of supplier agreements to verify that agreed security measures are still enforced.",
+   "Any change to a supplier’s service scope triggers an update of the contractual security requirements within five business days."
+  ],
+  "ISO_A_5.21": [
+   "The Procurement Manager must complete a security risk assessment for all new ICT suppliers before contract award, documented in the Supplier Risk Register.",
+   "Quarterly, the IT Security Team reviews supplier security certifications and updates the ICT Supplier Compliance Dashboard to reflect any changes.",
+   "All ICT service contracts must include a clause requiring suppliers to notify us of security incidents within 24 hours, recorded in the Incident Notification Log.",
+   "The Vendor Management Officer conducts an annual on‑site audit of critical suppliers and uploads findings to the Supplier Audit Repository."
+  ],
+  "ISO_A_5.22": [
+   "The Supplier Security Manager conducts quarterly risk assessments of all critical vendors and records findings in the Supplier Risk Register.",
+   "Any change to a supplier’s security controls must be approved by the Information Security Committee within five business days of notification.",
+   "Monthly performance dashboards, generated by the Vendor Management System, include security incident metrics and are reviewed by the IT Governance Lead.",
+   "When a supplier fails a compliance audit, the Procurement Officer initiates a corrective action plan and updates the Supplier Compliance Log within three days."
+  ],
+  "ISO_A_5.23": [
+   "The Cloud Services Procurement Team must complete a risk assessment and obtain approval from the CISO before any cloud contract is signed.",
+   "All cloud service providers are listed in the Cloud Service Register, which includes contract terms, data classification, and annual review dates.",
+   "The IT Operations team conducts quarterly security configuration reviews of all SaaS applications and documents findings in the Cloud Security Log.",
+   "When terminating a cloud service, the Data Owner must verify data deletion, update the Cloud Service Register, and obtain sign‑off from the Information Security Manager."
+  ],
+  "ISO_A_5.24": [
+   "The Incident Response Team, led by the CISO, shall follow the documented response steps within 15 minutes of detection.",
+   "All security incidents are logged in the Incident Management System and reviewed weekly by the Risk Management Committee.",
+   "Quarterly tabletop exercises are conducted to test the incident handling procedures and update roles and responsibilities as needed.",
+   "The Incident Response Plan is communicated to all staff via the intranet and mandatory annual training."
+  ],
+  "ISO_A_5.25": [
+   "The Information Security Manager reviews all security alerts within 4 hours and records the assessment outcome in the Incident Assessment Log.",
+   "If an event is deemed a potential incident, the SOC team escalates it to the Incident Response Team using the ticketing system within 30 minutes.",
+   "The quarterly audit verifies that all security events have been evaluated and correctly classified, with findings documented in the Security Event Review Report.",
+   "The Chief Information Security Officer approves the final incident classification and updates the central incident register no later than one business day after assessment."
+  ],
+  "ISO_A_5.26": [
+   "The Incident Response Team shall log all security events in the Incident Register within one hour of detection.",
+   "The SOC uses the SIEM system to trigger the predefined response workflow for each classified incident.",
+   "The CISO reviews the incident response report and updates the corrective action plan quarterly.",
+   "All incident response steps, including containment, eradication, and recovery, are documented in the Incident Response Procedure and archived for 24 months."
+  ],
+  "ISO_A_5.27": [
+   "The Incident Response Team reviews post‑incident reports quarterly and updates security controls based on identified lessons learned.",
+   "All security incidents are logged in the ISMS incident register; the CISO validates corrective actions within 10 business days.",
+   "After each breach, the Risk Management Committee conducts a root‑cause analysis and revises relevant policies within 30 days.",
+   "The security awareness program incorporates lessons learned from incidents, refreshed semi‑annually by the Training Coordinator."
+  ],
+  "ISO_A_5.28": [
+   "The Security Incident Response Team records all event details in the Evidence Log within 30 minutes of detection, assigning a unique case ID for traceability.",
+   "Forensic analysts acquire system snapshots using approved imaging tools, documenting hash values and storage locations to maintain chain‑of‑custody integrity.",
+   "The Evidence Preservation Schedule mandates weekly backups of collected logs to encrypted, air‑gapped storage, with retention for a minimum of three years.",
+   "Access to evidence repositories is restricted to the Incident Manager and authorized auditors, reviewed quarterly against the Access Control Register."
+  ],
+  "ISO_A_5.29": [
+   "The Business Continuity Manager reviews and updates the Information Security Continuity Plan quarterly, ensuring critical assets have defined protection measures during disruptions.",
+   "IT Security Team conducts weekly backup verification and restores tests to confirm data integrity and availability during service interruptions.",
+   "All critical systems are configured with automated failover to secondary sites, and the Incident Response Lead validates failover functionality after each major change.",
+   "Security logs are archived daily and reviewed by the Compliance Officer within 48 hours of any disruption event."
+  ],
+  "ISO_A_5.30": [
+   "The Business Continuity Manager reviews and updates the ICT continuity plan annually, incorporating changes to critical systems and recovery time objectives.",
+   "Quarterly, the IT Operations team conducts simulated failover tests on the primary data centre and records results in the ICT Continuity Test Register.",
+   "The Change Management process requires a Business Impact Analysis approval before any modification to systems supporting critical business functions.",
+   "Recovery Point Objectives and Recovery Time Objectives for each critical application are documented in the ICT Continuity Requirements matrix and reviewed during each audit."
+  ],
+  "ISO_A_5.31": [
+   "The Compliance Officer reviews and updates the Legal Requirements Register quarterly, documenting all applicable data protection, privacy, and industry regulations.",
+   "All new contracts are assessed by the Legal Team within five business days to verify inclusion of required information security clauses.",
+   "The ISMS automatically flags changes in relevant legislation, prompting the Risk Management team to conduct a compliance impact analysis within ten days.",
+   "Regulatory obligations are recorded in the central Document Management System and reviewed during the annual internal audit for completeness and currency."
+  ],
+  "ISO_A_5.32": [
+   "The Legal Department reviews all new software licenses quarterly and records any IP restrictions in the License Management System.",
+   "Project managers must obtain signed IP clearance forms from creators before uploading code to the repository, and store the forms in the Project Documentation Register.",
+   "The IT security team conducts monthly audits of file‑sharing platforms to ensure no unauthorized distribution of copyrighted material.",
+   "All employees receive annual training on respecting third‑party IP rights, with completion tracked in the Learning Management System."
+  ],
+  "ISO_A_5.33": [
+   "The Records Management Officer reviews backup logs daily to verify that all critical records are stored securely and recoverable.",
+   "Access to the document repository is restricted to authorized personnel via role‑based permissions and reviewed quarterly by the Information Security Manager.",
+   "All physical files are kept in a fire‑rated vault with tamper‑evident seals, and inventory checks are performed monthly by the Facilities Team.",
+   "Any alteration to electronic records triggers an immutable audit trail; the change log is audited weekly by the Compliance Officer."
+  ],
+  "ISO_A_5.34": [
+   "The Data Protection Officer reviews all new contracts quarterly to verify compliance with privacy laws and PII protection requirements.",
+   "All personal data is stored in the encrypted HR database, with access limited to authorized personnel per the access control matrix.",
+   "The privacy impact assessment checklist is completed for each project handling PII and archived in the compliance register for five years.",
+   "The incident response team conducts monthly audits of data handling procedures to ensure alignment with applicable regulations and contractual obligations."
+  ],
+  "ISO_A_5.35": [
+   "The Information Security Manager shall commission an external audit of the ISMS every 12 months, documenting findings in the Independent Review Register.",
+   "Any major change to the security architecture triggers a mandatory independent review by the appointed third‑party assessor within 30 days.",
+   "The Internal Audit Team conducts a quarterly independent assessment of people, processes, and technologies, recording results in the IS Review Log.",
+   "All independent review reports are reviewed by the Risk Committee and archived for a minimum of five years."
+  ],
+  "ISO_A_5.36": [
+   "The Information Security Manager shall review the Information Security Policy and all related standards annually, documenting any changes in the policy register.",
+   "Department heads must verify compliance with their specific security procedures quarterly and record results in the compliance tracking system.",
+   "The internal audit team conducts semi‑annual checks of rule adherence, updating the non‑conformance log and reporting findings to senior management.",
+   "All security rule exceptions require a documented justification and must be re‑assessed every six months by the Risk Committee."
+  ],
+  "ISO_A_5.37": [
+   "The IT Operations Manager maintains the Operating Procedures Manual and ensures it is accessible on the internal SharePoint portal for all system administrators.",
+   "Procedures for server patching, backup, and incident response are documented in the SOP repository and reviewed quarterly by the Information Security Team.",
+   "All new hires receive the relevant operating procedures during onboarding, and acknowledgment is recorded in the HR compliance system.",
+   "The Change Management Board verifies that any modification to processing facilities follows the documented steps and updates the procedure version in the configuration management database."
+  ],
+  "ISO_A_6.1": [
+   "HR shall verify criminal, credit, and employment history for all new hires before issuance of system access, documenting results in the Personnel Screening Register.",
+   "The Security Officer reviews background check records annually for existing staff with privileged access and updates clearance levels accordingly.",
+   "Screening procedures require at least a Level‑2 background check for employees accessing confidential data, performed by the HR compliance system and logged in the Risk Management Database.",
+   "Any contractor assigned to critical projects must complete a security vetting questionnaire and provide references, with verification completed within five business days before contract start."
+  ],
+  "ISO_A_6.2": [
+   "All employment contracts include a clause obligating staff to protect confidential information and report security incidents to the Information Security Officer.",
+   "The HR system records each employee’s acceptance of the information security policy during onboarding and annually thereafter.",
+   "Managers must review and sign the employee’s security responsibilities checklist each year, documenting compliance in the personnel file.",
+   "The IT department updates role‑based access controls within 48 hours of any contract amendment that alters security duties."
+  ],
+  "ISO_A_6.3": [
+   "All new hires complete the Information Security Awareness e‑learning module within 30 days of start date, recorded in the HR onboarding system.",
+   "Quarterly refresher training on phishing detection is mandatory for all staff; attendance logged in the Learning Management System.",
+   "Department managers review and distribute updates to the Information Security Policy to their teams monthly; acknowledgments are captured in the policy compliance register.",
+   "Contractors receive role‑specific security briefings before system access; briefing completion is tracked in the Vendor Management portal."
+  ],
+  "ISO_A_6.4": [
+   "The Information Security Manager shall maintain a Disciplinary Action Register documenting all policy violations, corrective actions, and outcomes, updated within five business days of each incident.",
+   "HR and the Security Officer will conduct a formal review meeting within three days of a violation, following the predefined five‑step disciplinary workflow.",
+   "All disciplinary decisions are recorded in the centralized Security Incident Management System and communicated to the employee and their manager within two business days.",
+   "Quarterly audits verify that the disciplinary process is applied consistently, with audit reports filed in the Compliance Archive and reviewed by the Chief Information Security Officer."
+  ],
+  "ISO_A_6.5": [
+   "The HR manager must revoke all user accounts and retrieve company assets within 24 hours of employee termination.",
+   "IT security staff shall archive the departing employee’s email and file access logs for a minimum of three years.",
+   "The line manager must conduct an exit interview checklist, confirming knowledge transfer and signing off on the data protection responsibilities handover.",
+   "Access rights are reviewed quarterly; any changes due to role transfer are documented in the Access Control Register and communicated to the security team."
+  ],
+  "ISO_A_6.6": [
+   "All new hires and contractors must sign a confidentiality agreement before receiving access to the corporate document repository.",
+   "The HR department maintains a centralized NDA register, reviewed quarterly by the Information Security Manager for completeness and expiration dates.",
+   "Project managers must obtain signed NDAs from all external vendors prior to sharing any project‑specific data in the collaboration platform.",
+   "The legal team updates the template confidentiality agreement annually and distributes it via the document control system to all relevant personnel."
+  ],
+  "ISO_A_6.7": [
+   "All remote employees must use company‑issued VPN with multi‑factor authentication, logged and reviewed weekly by the IT Security team.",
+   "The Remote Work Access Register records each user’s device ID, approved applications, and last security patch date; updates are performed monthly.",
+   "Managers must verify that remote staff complete quarterly security awareness training and sign the Remote Working Agreement before receiving network credentials.",
+   "Any remote connection failure or security incident is logged in the Incident Tracker within 24 hours and escalated to the Information Security Officer."
+  ],
+  "ISO_A_6.8": [
+   "Employees report suspected security incidents to the Security Hotline or ticketing system within one hour of awareness, and the Security Officer logs each case in the Incident Register.",
+   "The IT Service Desk acknowledges all security event submissions within 30 minutes and forwards them to the Incident Response Team for investigation.",
+   "Quarterly training reminders instruct staff to use the online reporting portal, ensuring all observed threats are recorded and escalated according to the documented escalation matrix.",
+   "The Security Manager reviews the monthly Incident Register, verifies timely closure of each report, and reports summary statistics to senior management."
+  ],
+  "ISO_A_7.1": [
+   "The Facilities Manager shall review and update the physical security perimeter map quarterly, documenting access points, barriers, and surveillance coverage in the Secure Area Register.",
+   "All employees must wear ID badges and be escorted by an authorized security guard when entering the data center perimeter beyond the main reception.",
+   "The Security Team conducts monthly patrols of the perimeter fence, logs any breaches in the Physical Security Incident Log, and initiates corrective actions within 48 hours.",
+   "Access control systems shall automatically lock all doors outside the defined security zone at 22:00 daily, with audit trails retained for 90 days."
+  ],
+  "ISO_A_7.2": [
+   "All visitors must sign in at the reception desk, present a photo ID, and be escorted by an authorized employee while in the data centre.",
+   "Access to the server room is granted only via badge readers linked to the central access control system, with logs reviewed weekly by the Security Manager.",
+   "The Facilities team conducts monthly physical security inspections, verifying that all doors, locks, and CCTV cameras function correctly and documenting any deficiencies in the Secure Area Register.",
+   "Only personnel with a current Role‑Based Access Permission may enter the confidential archives; entry events are recorded in real‑time and retained for 90 days."
+  ],
+  "ISO_A_7.3": [
+   "Facilities Manager conducts quarterly physical security inspections of all office spaces and records findings in the Facility Security Log.",
+   "Access to server rooms is restricted to authorized IT staff via badge readers, with access logs reviewed weekly by the Security Officer.",
+   "All visitor entries are logged in the Reception System, and visitors are escorted by a designated employee until escorted to their destination.",
+   "Emergency exit routes are inspected monthly, and any deficiencies are reported to the Health & Safety Coordinator for corrective action within five business days."
+  ],
+  "ISO_A_7.4": [
+   "The Security Operations Center monitors all entry points via CCTV 24/7 and logs any unauthorized access attempts.",
+   "Facilities Manager reviews daily access logs from badge readers and escalates incidents to Incident Response Team within one hour.",
+   "All visitors must be escorted; Reception records entry and exit times in the Visitor Management System.",
+   "Physical security cameras are tested quarterly; maintenance records are retained for twelve months and reviewed by the Security Manager."
+  ],
+  "ISO_A_7.5": [
+   "The Facilities Manager conducts quarterly risk assessments of all data centre sites, documenting flood, fire, and seismic vulnerabilities in the Physical Threat Register.",
+   "Emergency power generators are tested monthly, with results logged in the Asset Maintenance System and any deficiencies escalated to the IT Operations Lead within 24 hours.",
+   "All server rooms are equipped with fire suppression systems inspected semi‑annually; inspection certificates are stored in the Compliance Documentation Repository.",
+   "The Business Continuity Team updates the Disaster Recovery Plan annually, incorporating new climate risk data and confirming backup site accessibility through quarterly drill reports."
+  ],
+  "ISO_A_7.6": [
+   "Access to the data centre is restricted to authorized personnel; entry logs are reviewed weekly by the Security Manager.",
+   "All visitors must be escorted by a designated employee and sign the Secure Area Visitor Register before entry.",
+   "Physical barriers, CCTV monitoring, and badge readers are maintained and tested quarterly to ensure integrity of secure zones.",
+   "Employees handling classified information complete annual secure‑area awareness training and acknowledge the Secure Area Procedures."
+  ],
+  "ISO_A_7.7": [
+   "All employees must lock their computers and log off when leaving their workstation, and store printed documents in locked cabinets by end of day.",
+   "The Facilities Manager conducts weekly inspections to verify that no confidential papers or USB drives remain on desks after business hours.",
+   "IT enforces automatic screen lock after five minutes of inactivity and requires password-protected screensavers on all workstations.",
+   "A quarterly audit records compliance with clear‑desk policies, noting any exceptions and corrective actions in the security compliance register."
+  ],
+  "ISO_A_7.8": [
+   "The Facilities Manager shall approve all server room locations and verify that access doors are locked and monitored by CCTV 24/7.",
+   "A quarterly inspection record must document physical barriers, fire suppression systems, and environmental controls for each critical equipment area.",
+   "IT Security staff perform monthly checks to ensure equipment racks are anchored, cable trays are secured, and no unauthorized devices are connected.",
+   "All new hardware installations require a signed Site‑Siting Checklist completed by the Project Lead and reviewed by the Risk Officer within 5 business days."
+  ],
+  "ISO_A_7.9": [
+   "The Asset Custodian shall verify quarterly that all portable devices stored off-site are encrypted and logged in the Asset Register.",
+   "Remote storage facilities must be inspected annually by the Facilities Manager, with inspection results recorded in the Off‑Site Asset Security Log.",
+   "All off‑premises backup tapes are stored in a locked vault; access is limited to the Backup Administrator and reviewed monthly.",
+   "The IT Security Team conducts bi‑annual risk assessments of third‑party data centers and updates the Off‑Site Asset Risk Register accordingly."
+  ],
+  "ISO_A_7.10": [
+   "The IT Asset Manager records acquisition, usage, transport, and disposal dates for all storage media in the Asset Register, aligned with the data classification policy.",
+   "Quarterly audits verify that encrypted external drives are logged, transported in sealed containers, and destroyed according to the approved media disposal schedule.",
+   "The Data Custodian must label each storage device with its classification level and update the Media Tracking System before any relocation.",
+   "Media disposal is performed by the Secure Shredding Vendor annually, with a certificate of destruction filed in the Compliance Records."
+  ],
+  "ISO_A_7.11": [
+   "The Facilities Manager shall conduct quarterly UPS load testing and document results in the Power Resilience Log.",
+   "Critical servers are connected to dual power feeds with automatic transfer switches, monitored continuously by the Data Center Operations team.",
+   "The Business Continuity Plan requires monthly verification of backup generator fuel levels and load capacity, recorded in the Generator Maintenance Register.",
+   "IT Service Desk escalates any power outage alerts from the environmental monitoring system within 5 minutes, logging incident details in the Service Management Tool."
+  ],
+  "ISO_A_7.12": [
+   "The Facilities Manager conducts quarterly visual inspections of all conduit pathways to verify that data and power cables are sealed and free from tampering.",
+   "All network cable runs are routed through locked cable trays and documented in the Cable Inventory Register, updated after any installation or relocation.",
+   "The IT Security Officer reviews CCTV footage of server rooms weekly to ensure no unauthorized access to cable bundles.",
+   "Any discovered cable damage must be reported in the Incident Log within 2 hours and repaired by the Maintenance Team within 24 hours."
+  ],
+  "ISO_A_7.13": [
+   "The IT Operations Manager schedules quarterly preventive maintenance for all servers and network devices, documenting tasks in the Maintenance Log.",
+   "Asset owners must submit a maintenance request via the ServiceNow portal within 5 business days of any equipment fault, and the request is tracked in the Incident Register.",
+   "Monthly calibration of security cameras is performed by the Facilities Team, with results recorded in the Equipment Calibration Register and reviewed by the Information Security Officer.",
+   "All backup hardware is inspected semi‑annually for wear and replaced as needed; replacement actions are logged in the Backup Asset Maintenance Sheet."
+  ],
+  "ISO_A_7.14": [
+   "The IT Asset Manager must verify data erasure on all decommissioned devices using approved wiping software before disposal, documenting results in the Asset Disposal Register.",
+   "Quarterly audits are performed by the Information Security Officer to confirm that all retired storage media have been securely overwritten and the verification logs are retained for five years.",
+   "Before any equipment is reassigned, the System Administrator runs a certified data sanitization tool and records the overwrite status in the Re‑use Confirmation Form.",
+   "All disposal requests must include a signed Data Removal Checklist signed by the Asset Owner and verified by the IT Security Team within two business days."
+  ],
+  "ISO_A_8.1": [
+   "All laptops and mobile devices must have full-disk encryption enabled and be managed through the Enterprise Mobility Management (EMM) system.",
+   "The IT Security Officer reviews endpoint protection logs weekly to verify anti‑malware signatures are up‑to‑date on every user device.",
+   "Employees must lock their screens with a password or biometric authentication after 5 minutes of inactivity, as recorded in the Endpoint Access Control Register.",
+   "Remote wipe capability is enabled for all corporate devices; loss or theft is reported to the Help Desk within 2 hours and logged in the Incident Register."
+  ],
+  "ISO_A_8.2": [
+   "Privileged access to the production database is granted only to the Database Administrator role and reviewed quarterly.",
+   "All privileged accounts must be approved by the Information Security Manager and recorded in the Privileged Access Register.",
+   "Privileged access rights are assigned through the Identity Management system with multi‑factor authentication and logged for audit.",
+   "Any change to privileged permissions requires a documented request, manager approval, and is reconciled monthly against the access control list."
+  ],
+  "ISO_A_8.3": [
+   "Only users assigned the 'Data Owner' role may approve access requests for confidential records via the Identity Management System.",
+   "Access rights are reviewed quarterly by the Information Security Manager and adjusted in the Access Control Register based on role changes.",
+   "All privileged accounts require multi‑factor authentication and are logged in the Privileged Access Log for audit every 30 days.",
+   "The Data Classification Matrix defines which systems enforce read‑only permissions for external contractors, enforced automatically by the Data Loss Prevention tool."
+  ],
+  "ISO_A_8.4": [
+   "Developers receive read‑only repository access; write permissions are granted only after manager approval and documented in the Access Control Register.",
+   "Source code changes are committed through the CI/CD pipeline, which enforces two‑factor authentication and logs all actions in the audit trail.",
+   "Third‑party libraries are stored in a protected artifact repository; access is limited to the DevOps team and reviewed quarterly.",
+   "All source‑code repositories are scanned weekly for unauthorized permission changes, and any deviation triggers an incident ticket assigned to the Security Engineer."
+  ],
+  "ISO_A_8.5": [
+   "System administrators must enforce multi-factor authentication for all privileged accounts and review MFA logs quarterly.",
+   "The Access Control Register records user role assignments, authentication method, and last password change date, updated after each role change.",
+   "Help desk staff must verify identity using two independent factors before resetting passwords, documented in the Password Reset Log within 24 hours.",
+   "All remote VPN connections require certificate-based authentication and are audited daily by the Security Operations team."
+  ],
+  "ISO_A_8.6": [
+   "The IT Operations Manager reviews server utilization reports weekly and adjusts VM allocations to meet projected workload demands.",
+   "Capacity planning records are updated monthly in the Configuration Management Database, documenting current usage and forecasted growth for each critical service.",
+   "The Service Desk logs all resource request tickets, and the Capacity Analyst reallocates bandwidth within 48 hours based on the SLA thresholds.",
+   "Quarterly performance dashboards display CPU, storage, and network utilization trends, prompting the Infrastructure Lead to schedule upgrades before capacity limits are reached."
+  ],
+  "ISO_A_8.7": [
+   "The IT Security Team conducts quarterly phishing simulations and records employee results in the Malware Awareness Register.",
+   "All workstations run centrally managed anti‑malware software, updated daily, with compliance logs reviewed by the Security Operations Manager each week.",
+   "New hires complete mandatory malware awareness training within five business days, and completion is tracked in the HR Learning Management System.",
+   "The Incident Response Procedure requires reporting suspected malware to the Help Desk within one hour, with incidents logged in the Security Incident Register."
+  ],
+  "ISO_A_8.8": [
+   "The Vulnerability Management Team scans all production servers weekly using Nessus and records findings in the Vulnerability Register.",
+   "System owners review the vulnerability register monthly and prioritize remediation actions based on risk rating and business impact.",
+   "The IT Change Advisory Board approves patch deployment schedules after confirming that critical patches are applied within 48 hours of release.",
+   "All identified vulnerabilities are logged in the central ticketing system, assigned to responsible engineers, and tracked until closure with documented verification."
+  ],
+  "ISO_A_8.9": [
+   "The Configuration Management Team maintains baseline configurations for all servers, documented in the Config Baseline Register, reviewed quarterly.",
+   "Change requests must be approved by the Change Advisory Board and applied using the automated deployment system within 48 hours of approval.",
+   "Network device configurations are stored in the secure Config Repository and audited monthly by the Security Operations Analyst.",
+   "Any deviation from approved security settings triggers an incident ticket and must be remediated within 5 business days, logged in the Configuration Exception Log."
+  ],
+  "ISO_A_8.10": [
+   "The Data Owner must approve deletion of all archived files, and the IT Operations team executes secure erase on storage devices quarterly.",
+   "Backup records older than 24 months are automatically purged by the backup management system after a documented verification by the Records Manager.",
+   "All user workstations run a scheduled script that overwrites deleted files with random data every 30 days, logged by the Endpoint Security tool.",
+   "The Records Retention Register lists each record type, retention period, and the responsible Custodian; upon expiry, the Custodian initiates secure deletion within five business days."
+  ],
+  "ISO_A_8.11": [
+   "The Data Protection Officer authorizes masking rules for all production databases before data is exported to non‑production environments.",
+   "Masking of personally identifiable information is applied automatically by the ETL pipeline during nightly data loads.",
+   "The Data Masking Register records each masked data element, the masking technique used, and the date of implementation, reviewed quarterly by the compliance team.",
+   "Developers must request a masking exception via the Access Control System, and the request is approved by the Information Security Manager within two business days."
+  ],
+  "ISO_A_8.12": [
+   "The Data Loss Prevention (DLP) system scans all outbound email and file transfers hourly, blocking unauthorized transmission of classified data.",
+   "Information owners must approve any external sharing of sensitive files, documented in the Data Transfer Register and reviewed quarterly by the Security Officer.",
+   "All removable media are encrypted and logged by the Endpoint Protection tool; usage logs are retained for 180 days and audited monthly.",
+   "Network administrators enforce DLP policies on all routers and switches, generating alerts for policy violations that the Incident Response Team investigates within 24 hours."
+  ],
+  "ISO_A_8.13": [
+   "The Backup Administrator shall schedule daily incremental backups of all production servers using Veeam Backup & Replication, retaining copies for 30 days.",
+   "Quarterly full backup restores shall be performed by the IT Operations team and documented in the Backup Test Log, confirming data integrity and recovery time objectives.",
+   "Backup retention schedules are reviewed annually by the Information Security Manager and updated in the Backup Policy Register to align with business continuity requirements.",
+   "All backup media are encrypted at rest, stored offsite in a fire‑protected vault, and inventoryed in the Asset Management System with quarterly verification."
+  ],
+  "ISO_A_8.14": [
+   "The IT Operations Manager ensures primary and secondary data center servers are synchronized hourly to maintain continuous service availability.",
+   "Critical application failover is tested quarterly by the Business Continuity Team, with results recorded in the Redundancy Test Log.",
+   "Network routers are configured in active‑passive mode, and the Network Engineer verifies link status every 15 minutes via monitoring dashboard.",
+   "Backup power supplies are inspected monthly, and any deficiency is logged in the Facility Maintenance Register for corrective action."
+  ],
+  "ISO_A_8.15": [
+   "The Security Operations Center generates system logs for all user access events and stores them in the centralized SIEM for 90 days.",
+   "The IT Administrator reviews exception logs weekly and escalates any anomalies to the Incident Response Team within 24 hours.",
+   "All application fault logs are encrypted at rest, backed up nightly, and retained for a minimum of one year according to the Data Retention Schedule.",
+   "The Compliance Officer conducts quarterly analysis of security logs to verify compliance with internal policies and regulatory requirements."
+  ],
+  "ISO_A_8.16": [
+   "The Security Operations Center monitors network traffic logs daily using SIEM, and the SOC Analyst escalates any anomalies to the Incident Response Team within 2 hours.",
+   "System administrators review application error logs weekly and record suspicious events in the Security Incident Register for further investigation.",
+   "The IT Change Management process requires a post‑implementation verification step to confirm no unexpected behavior was introduced, documented in the Change Review Log.",
+   "All critical servers generate real‑time alerts to the Incident Management Dashboard; the Dashboard Owner validates alerts hourly and initiates a containment procedure if thresholds are exceeded."
+  ],
+  "ISO_A_8.17": [
+   "The IT Operations team shall configure all servers to synchronize time with the corporate NTP pool every 5 minutes.",
+   "Network devices must log NTP server status daily in the Time Sync Log and be reviewed by the Security Analyst.",
+   "The Time Synchronization Register records approved NTP sources, their IP addresses, and last verification dates, updated quarterly.",
+   "Any deviation in system clock drift exceeding 2 seconds triggers an incident ticket and immediate corrective action by the System Administrator."
+  ],
+  "ISO_A_8.18": [
+   "Only the System Administrator role may execute privileged utilities, and each execution requires dual‑approval recorded in the Privileged Access Log.",
+   "Privileged utility usage is reviewed weekly by the Information Security Manager and any unauthorized runs are escalated to the Risk Committee.",
+   "All privileged utility commands must be run through the Centralized Command Control system, which logs user, timestamp, and purpose for audit.",
+   "A quarterly reconciliation of privileged utility access rights is performed, and any discrepancies are corrected and documented in the Access Rights Register."
+  ],
+  "ISO_A_8.19": [
+   "The Change Management Board reviews and approves all software installation requests before deployment on production servers.",
+   "System administrators must record each installed application in the Software Inventory Register within 24 hours of deployment.",
+   "Quarterly audits verify that only approved packages are present on operational workstations, and any unauthorized software is removed immediately.",
+   "The IT Security Officer signs off on the installation checklist, confirming that integrity checks and version control have been performed."
+  ],
+  "ISO_A_8.20": [
+   "The Network Operations Team reviews firewall rule sets quarterly and documents changes in the Network Configuration Register.",
+   "All network devices are enrolled in the Asset Management System and receive monthly security patches verified by the IT Security Engineer.",
+   "Access to network management consoles requires multi‑factor authentication and is logged in the Access Control Log, reviewed weekly by the Compliance Officer.",
+   "Network traffic is monitored by the Intrusion Detection System; alerts are triaged within 30 minutes and recorded in the Incident Response Register."
+  ],
+  "ISO_A_8.21": [
+   "The Network Services Owner documents required security mechanisms, service level agreements, and performance metrics in the Network Service Register, reviewed quarterly.",
+   "IT Operations monitors firewall and IDS configurations daily, logging deviations in the Network Security Monitoring Log and escalating incidents to the Incident Response Team within 30 minutes.",
+   "The Service Level Management process defines minimum bandwidth, latency, and availability thresholds for each external connection, recorded in the Service Level Agreement repository and reviewed annually.",
+   "Network administrators conduct quarterly vulnerability scans on all network services, update the Vulnerability Register, and verify remediation actions are completed within the agreed remediation window."
+  ],
+  "ISO_A_8.22": [
+   "Network administrators assign VLANs to separate finance, HR, and production systems, ensuring no cross‑traffic between them.",
+   "The IT security team reviews firewall rules quarterly to confirm isolation of guest Wi‑Fi from internal corporate networks.",
+   "User access groups are mapped to dedicated subnets; any change requires manager approval and a documented change request.",
+   "All remote access connections are routed through a DMZ, segregating external users from core business applications."
+  ],
+  "ISO_A_8.23": [
+   "The IT Security Manager reviews the web filtering logs weekly to ensure blocked categories align with the Acceptable Use Policy.",
+   "All outbound web traffic is routed through the corporate proxy (FortiGate) with URL filtering enabled for malware and phishing sites.",
+   "The Network Operations team updates the web filter block list monthly based on threat intelligence feeds and incident reports.",
+   "Employees must request exceptions to web filtering via the ServiceNow ticketing system, approved by the Information Security Officer."
+  ],
+  "ISO_A_8.24": [
+   "The CISO approves all cryptographic algorithms and key lengths before deployment in production systems.",
+   "Key management procedures require quarterly rotation of symmetric keys and annual review of key custodianship records.",
+   "All encryption keys are stored in the HSM and logged in the Key Management Register, with access limited to the Security Operations team.",
+   "Incident response includes immediate revocation of compromised keys and notification to the Data Protection Officer within 24 hours."
+  ],
+  "ISO_A_8.25": [
+   "The Software Development Team must follow the Secure SDLC checklist for each project, documenting threat modeling, code review, and testing in the project repository.",
+   "The Application Security Engineer conducts quarterly penetration tests on all production releases and records findings in the Vulnerability Management System.",
+   "Developers must obtain sign‑off from the Security Review Board before moving code to the staging environment, as logged in the Change Management Database.",
+   "All security requirements are captured in the Requirements Traceability Matrix and reviewed during each sprint planning meeting by the Product Owner and Security Analyst."
+  ],
+  "ISO_A_8.26": [
+   "The Application Development Team must document security requirements in the Application Security Requirements Register before any design phase begins.",
+   "The Security Architect reviews and approves all identified security requirements within five business days of submission.",
+   "All new or purchased applications undergo a security requirements verification step using the SecureAppCheck tool during the onboarding process.",
+   "Quarterly audits verify that the recorded security requirements align with implemented controls for each production application."
+  ],
+  "ISO_A_8.27": [
+   "The Architecture Review Board reviews and approves all system designs quarterly, documenting security principles and mitigation measures in the System Design Register.",
+   "Developers must follow the Secure Development Checklist for each project phase, with the Security Engineer signing off before code moves to production.",
+   "All architecture artifacts are stored in the Configuration Management Database and reviewed annually to ensure alignment with current security engineering standards.",
+   "The IT Risk Manager updates the Secure System Architecture Register after each major change, recording decisions, responsible owners, and compliance verification dates."
+  ],
+  "ISO_A_8.28": [
+   "Developers must follow the Secure Coding Guidelines and complete a code review checklist for each release.",
+   "The Application Security Team conducts quarterly static code analysis using SAST tools and records findings in the Vulnerability Register.",
+   "All new code is scanned by automated security testing in the CI/CD pipeline before deployment to production.",
+   "Project managers ensure that security requirements are documented in the Software Requirements Specification and reviewed during design sign‑off."
+  ],
+  "ISO_A_8.29": [
+   "The Application Security Team conducts static code analysis on all new code releases using SonarQube before moving to the integration environment.",
+   "Functional test leads must execute automated penetration test scripts weekly and record results in the Security Test Register.",
+   "Release managers approve deployment only after the QA team signs off on the documented vulnerability remediation evidence.",
+   "All acceptance test artifacts, including test plans, logs, and remediation tickets, are archived in the central compliance repository for a minimum of two years."
+  ],
+  "ISO_A_8.30": [
+   "The Project Manager shall approve all outsourced development contracts and maintain a signed contract register updated quarterly.",
+   "The Security Officer reviews outsourced vendor security assessments before any code delivery and records findings in the Vendor Risk Register.",
+   "The Development Lead conducts bi‑weekly status meetings with the external supplier to verify compliance with secure coding standards and logs minutes in the Project Tracker.",
+   "The Change Advisory Board validates and signs off on all outsourced code changes after independent penetration testing, documenting approval in the Change Management System."
+  ],
+  "ISO_A_8.31": [
+   "The Development, Test, and Production environments are hosted on separate network segments with distinct firewalls and access controls, managed by the IT Operations team.",
+   "Only authorized developers may access the Development environment, and they must use multi‑factor authentication recorded in the access‑control log, reviewed monthly by the Security Officer.",
+   "Test environment data is refreshed quarterly from production snapshots, with all personal data anonymized, and the process is documented in the Test Data Management Register.",
+   "Production systems are isolated from development tools; any code promotion requires a signed change request and a post‑deployment verification performed by the Release Management team."
+  ],
+  "ISO_A_8.32": [
+   "All changes to production servers must be documented in the Change Request Register and approved by the Change Advisory Board before implementation.",
+   "The Configuration Management System automatically logs each change, records the responsible Change Owner, and notifies the IT Security Manager within 24 hours.",
+   "Emergency patches are applied only after a risk assessment is completed and a temporary change record is created, to be reviewed in the next weekly change meeting.",
+   "Quarterly audits verify that all change tickets have closed status, contain post‑implementation testing evidence, and are archived in the secure change log repository for five years."
+  ],
+  "ISO_A_8.33": [
+   "The Test Lead selects test data sets based on risk assessment and records selection criteria in the Test Data Register.",
+   "All test data is stored in the encrypted Test Data Repository with access limited to QA and Security teams, reviewed quarterly.",
+   "Test data disposal is performed by the Data Custodian within 30 days of test completion, documented in the Test Data Disposal Log.",
+   "The Security Officer conducts monthly audits of test data handling procedures to ensure compliance with protection and management requirements."
+  ],
+  "ISO_A_8.34": [
+   "The IT Security Manager and the Audit Lead shall jointly schedule and approve all audit test plans for production systems at least 14 days in advance.",
+   "A written test scope document, signed by the System Owner and the Auditor, must be stored in the secure audit repository for a minimum of three years.",
+   "Prior to any testing, the Auditor shall notify the Change Management team, and the change request must be logged and approved in the ITSM tool.",
+   "Audit test results are reviewed in the monthly security governance meeting, and any findings are assigned to the responsible application owner with a remediation deadline."
+  ]
+ }
+}

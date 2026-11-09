@@ -1,0 +1,565 @@
+{
+ "_model": "gemma4:31b-cloud",
+ "_temperature": 0,
+ "_prompt": "You write example text for a search index. ISO/IEC 27001:2022 Annex A control {cid} '{title}': {text}\n\nWrite 4 short, different sentences (max 30 words each) as they would appear in a company's information security policy, procedure, register or table and that would show this control is implemented. Use the concrete words organisations use for it (roles, systems, records, steps, frequencies), not the wording of the control. Do not mention ISO, Annex A or the control number. Output only a JSON list of 4 strings.",
+ "queries": {
+  "ISO_A_5.1": [
+   "The Information Security Management System (ISMS) policy is reviewed annually by the CISO and approved by the Executive Board.",
+   "All new hires must sign the policy acknowledgement form via the HR portal during their onboarding process.",
+   "Topic-specific policies for Access Control and Encryption are published on the company intranet for all staff to access.",
+   "The Policy Compliance Register tracks the version history and last review date for every active security guideline."
+  ],
+  "ISO_A_5.2": [
+   "The CISO is responsible for the annual review and approval of the Information Security Management System (ISMS) framework.",
+   "Access rights for production databases are managed by the System Administrator and reviewed quarterly by the Department Head.",
+   "The IT Support team is tasked with the daily monitoring of security logs and the immediate escalation of critical alerts.",
+   "A detailed Responsibility Assignment Matrix (RACI) defines the specific security duties for all permanent and contract staff."
+  ],
+  "ISO_A_5.3": [
+   "The employee who initiates a payment request cannot be the same person who approves it in the banking portal.",
+   "System administrator rights are separated from security audit roles to ensure independent review of access logs.",
+   "Changes to production code must be developed by one engineer and deployed by a separate release manager.",
+   "The procurement officer is prohibited from adding new vendors to the master record and authorizing payments to them."
+  ],
+  "ISO_A_5.4": [
+   "All employees must sign the Acceptable Use Policy during onboarding and annually thereafter to acknowledge their security obligations.",
+   "Department heads are responsible for reviewing team compliance with security procedures during quarterly performance evaluations.",
+   "The Information Security Officer monitors adherence to topic-specific policies through monthly access audits and system logs.",
+   "Managers must ensure that all new hires complete the mandatory security awareness training module before receiving production system access."
+  ],
+  "ISO_A_5.5": [
+   "The Legal Counsel maintains an updated directory of regulatory bodies and law enforcement agencies, reviewed annually.",
+   "The Incident Response Plan defines the specific triggers and communication channels for notifying the Data Protection Authority.",
+   "The CISO shall establish formal communication lines with the national CERT to receive timely threat intelligence updates.",
+   "All official correspondence with government security agencies is logged in the Regulatory Liaison Register."
+  ],
+  "ISO_A_5.6": [
+   "The CISO maintains an active membership in the regional ISACA chapter and attends quarterly security leadership forums.",
+   "The IT Security Team subscribes to the CERT-EU and NIST mailing lists to receive real-time vulnerability alerts.",
+   "A register of professional security associations and industry working groups is reviewed annually during the management review.",
+   "The Security Architect participates in monthly peer-exchange meetings with the Financial Services Information Sharing and Analysis Center (FS-ISAC)."
+  ],
+  "ISO_A_5.7": [
+   "The CISO reviews weekly threat feeds from the National Cyber Security Centre and industry ISACs to update the risk register.",
+   "Security analysts perform daily monitoring of CVE databases and vendor security advisories to identify vulnerabilities affecting our production stack.",
+   "The SOC team documents all analyzed indicators of compromise (IoCs) in the Threat Intelligence Log for integration into the SIEM.",
+   "Quarterly threat landscape reports are produced by the security team to adjust firewall rules and endpoint detection policies."
+  ],
+  "ISO_A_5.8": [
+   "The Project Manager must complete a Security Impact Assessment (SIA) during the initiation phase of every new project.",
+   "All project charters require a formal sign-off from the CISO to ensure security requirements are defined before development begins.",
+   "Security milestones and risk reviews are integrated into the monthly project steering committee reporting cycle.",
+   "The Project Management Office (PMO) maintains a register of security controls implemented for each active project lifecycle."
+  ],
+  "ISO_A_5.9": [
+   "The IT Manager maintains the Master Asset Register, documenting all hardware, software, and data sets with their assigned business owners.",
+   "All new software licenses and cloud services must be recorded in the Asset Inventory before deployment to production.",
+   "Department heads shall review their assigned information asset lists every six months to ensure ownership and classification remain accurate.",
+   "The Asset Register includes the system name, physical location, data sensitivity level, and the designated person responsible for its lifecycle."
+  ],
+  "ISO_A_5.10": [
+   "All employees must sign the Acceptable Use Policy (AUP) during onboarding to acknowledge the rules for using company laptops and email accounts.",
+   "The IT Manager reviews the asset register quarterly to ensure all hardware and software are assigned to a designated owner.",
+   "Confidential documents must be shredded using the secure bins located in the printing area or deleted using approved wiping software.",
+   "Users are prohibited from installing unauthorized third-party software on production servers without a signed change request from the Security Officer."
+  ],
+  "ISO_A_5.11": [
+   "The HR offboarding checklist requires managers to verify the return of laptops, security badges, and mobile devices before the final payroll payout.",
+   "All departing contractors must return encrypted USB drives and hardware tokens to the IT Service Desk on their last working day.",
+   "The Asset Register is updated within 24 hours of an employee's departure to reflect the recovery of assigned hardware.",
+   "IT Administration will revoke all system access and reclaim company-owned equipment immediately upon notification of contract termination."
+  ],
+  "ISO_A_5.12": [
+   "All employees must assign a classification level—Public, Internal, Confidential, or Restricted—to every document created within the DMS.",
+   "The Information Asset Register defines the confidentiality and integrity requirements for each system and the corresponding owner responsible for its review.",
+   "Data owners shall review and re-validate the classification of their assigned records on an annual basis or upon significant system changes.",
+   "Confidential and Restricted files must be encrypted at rest and labeled in the header to ensure appropriate handling by staff."
+  ],
+  "ISO_A_5.13": [
+   "All documents must be marked as 'Public', 'Internal', or 'Confidential' in the header before being uploaded to the SharePoint document library.",
+   "The Information Asset Owner is responsible for reviewing and updating the classification labels of their assigned data records during the annual audit.",
+   "Email communications containing sensitive client data must include the [RESTRICTED] tag in the subject line to trigger automated DLP encryption.",
+   "Physical media, including backup tapes and USB drives, shall be physically tagged with a color-coded label corresponding to the data sensitivity level."
+  ],
+  "ISO_A_5.14": [
+   "The IT Manager must approve all SFTP configurations and encryption keys used for external data exchanges.",
+   "All third-party data transfers require a signed Non-Disclosure Agreement and a documented Data Transfer Agreement.",
+   "Employees must use the corporate encrypted email gateway when sending PII to external partners.",
+   "The Data Transfer Register is reviewed quarterly to ensure all active API integrations remain authorized."
+  ],
+  "ISO_A_5.15": [
+   "The IT Manager must approve all new user account requests via the Jira ticketing system before access is granted.",
+   "User access rights are reviewed by department heads on a quarterly basis to ensure the principle of least privilege.",
+   "Physical entry to the server room is restricted to authorized technicians and logged via the electronic badge system.",
+   "All employee access permissions are revoked within 24 hours of termination as part of the HR offboarding checklist."
+  ],
+  "ISO_A_5.16": [
+   "HR notifies IT via the onboarding ticket system to provision user accounts and assign role-based access permissions upon a new hire's start date.",
+   "The IT Manager performs a quarterly access review of all privileged accounts to ensure permissions align with current job responsibilities.",
+   "User access rights are revoked and accounts disabled in Active Directory immediately upon notification of employee termination or contract end.",
+   "The Identity Register tracks the full lifecycle of each digital identity, including creation date, authorized roles, and the date of decommissioning."
+  ],
+  "ISO_A_5.17": [
+   "The IT Service Desk generates temporary passwords for new hires and records the issuance in the onboarding ticket.",
+   "All employees must complete the annual security awareness module covering the secure storage and handling of credentials.",
+   "The System Administrator reviews the privileged access register quarterly to revoke authentication tokens for deactivated accounts.",
+   "Users are prohibited from sharing passwords and must use the corporate vault for storing shared service account credentials."
+  ],
+  "ISO_A_5.18": [
+   "The IT Service Desk grants system access based on approved role-based access control (RBAC) templates upon receipt of a manager's request.",
+   "Department heads must perform a quarterly review of user permissions for all critical financial applications to ensure least privilege.",
+   "HR notifies the System Administrator within 24 hours of employee termination to trigger the immediate revocation of all logical access rights.",
+   "The Access Control Matrix maintains a record of authorized roles and their corresponding permission levels for every production environment."
+  ],
+  "ISO_A_5.19": [
+   "The Procurement Manager must conduct a security risk assessment for all new SaaS vendors before contract signature.",
+   "All third-party service providers are required to sign a Data Processing Agreement (DPA) and a Non-Disclosure Agreement.",
+   "The IT Compliance team reviews the SOC2 reports of critical suppliers on an annual basis to verify control effectiveness.",
+   "The Supplier Risk Register tracks all active vendors, their criticality levels, and the status of their latest security audits."
+  ],
+  "ISO_A_5.20": [
+   "The Procurement Manager must ensure the standard Security Exhibit is signed by all SaaS vendors before granting system access.",
+   "All third-party contracts are reviewed by the CISO to verify that data encryption and breach notification timelines are explicitly defined.",
+   "The Supplier Risk Register tracks the specific security obligations agreed upon for each critical vendor during the onboarding process.",
+   "Annual audits of key service providers are conducted to verify compliance with the security requirements outlined in their Service Level Agreements."
+  ],
+  "ISO_A_5.21": [
+   "The Procurement Manager must conduct a security risk assessment for all new SaaS vendors before contract signature.",
+   "The Approved Vendor List is reviewed quarterly to ensure third-party security certifications remain valid.",
+   "All ICT supply chain contracts must include the standard Data Processing Agreement and right-to-audit clauses.",
+   "The IT Asset Register tracks the origin and support lifecycle of all critical hardware components to mitigate supply chain vulnerabilities."
+  ],
+  "ISO_A_5.22": [
+   "The Procurement Manager conducts quarterly performance reviews of critical SaaS vendors against agreed SLAs and security KPIs.",
+   "All modifications to supplier service scopes must be documented in the Vendor Change Log and approved by the CISO.",
+   "Annual security assessments are performed for all Tier 1 suppliers to verify continued compliance with our data protection requirements.",
+   "The Vendor Risk Register is updated monthly to reflect changes in supplier security certifications and audit report findings."
+  ],
+  "ISO_A_5.23": [
+   "The Procurement Team must complete a Cloud Security Risk Assessment for all new SaaS vendors before contract signature.",
+   "The IT Manager maintains a Cloud Service Register documenting the data classification and security settings for each active subscription.",
+   "All cloud service exit plans are reviewed annually to ensure data portability and secure deletion of company records.",
+   "The CISO must approve the shared responsibility matrix for any cloud platform hosting production workloads."
+  ],
+  "ISO_A_5.24": [
+   "The Incident Response Team (IRT) is responsible for coordinating the containment and eradication of security breaches.",
+   "All security events must be logged in the Jira Service Management portal and categorized by severity level.",
+   "The Incident Response Plan is reviewed and tested via tabletop exercises on an annual basis.",
+   "Follow the six-step escalation workflow defined in the Security Operations Manual to report suspected data leaks."
+  ],
+  "ISO_A_5.25": [
+   "The SOC Analyst shall review all security alerts in the SIEM to determine if they constitute a formal security incident.",
+   "All reported anomalies are logged in the Incident Management System and triaged by the Security Officer within 4 hours.",
+   "The Incident Response Team evaluates event logs against the severity matrix to decide whether to trigger the Incident Response Plan.",
+   "Each security event record must include a 'Classification' field indicating whether the event was closed as a false positive or escalated to an incident."
+  ],
+  "ISO_A_5.26": [
+   "The Incident Response Team must follow the steps outlined in the Incident Management Playbook to contain and remediate all security breaches.",
+   "All detected security events are logged in the Jira Service Management portal and assigned a severity level by the SOC analyst.",
+   "The CISO reviews the incident response logs monthly to ensure all remediation actions were completed according to the defined SLAs.",
+   "Upon discovery of a data leak, the designated Incident Coordinator shall trigger the communication plan and notify the Data Protection Officer immediately."
+  ],
+  "ISO_A_5.27": [
+   "The Incident Response Team shall conduct a Post-Incident Review (PIR) for all critical security breaches to identify root causes and control gaps.",
+   "Lessons learned from the incident log are reviewed quarterly by the CISO to update the risk register and technical security baselines.",
+   "Following the closure of a security ticket, the system administrator must document required configuration changes in the Change Management System.",
+   "The Security Committee reviews the annual incident trend report to allocate budget for improving failing security controls."
+  ],
+  "ISO_A_5.28": [
+   "The Incident Response Team must create a forensic image of affected virtual machines before any remediation steps are taken.",
+   "All system logs and memory dumps collected during a security breach are stored in a write-once-read-many (WORM) archive to ensure integrity.",
+   "The IT Manager maintains a Chain of Custody log for all physical hardware seized during an internal investigation.",
+   "The Security Operations Center (SOC) follows the Digital Evidence Handling Procedure to document the timestamp and source of all captured network packets."
+  ],
+  "ISO_A_5.29": [
+   "The Business Continuity Manager shall review and update the disaster recovery security protocols annually.",
+   "Critical security systems, including firewalls and IAM tools, must be restored within 4 hours of a declared outage.",
+   "The Incident Response Team will maintain a manual access log for the data center during network failures.",
+   "Emergency operational procedures include a mandatory security validation step before failing over to the secondary site."
+  ],
+  "ISO_A_5.30": [
+   "The IT Infrastructure Manager shall conduct a full disaster recovery test of the primary data center every six months.",
+   "Critical system recovery time objectives (RTOs) and recovery point objectives (RPOs) are documented in the Business Impact Analysis register.",
+   "The DevOps team maintains automated failover configurations for all production clusters to ensure continuous service availability.",
+   "Annual reviews of the ICT Continuity Plan are required to align technical recovery steps with current business operational requirements."
+  ],
+  "ISO_A_5.31": [
+   "The Legal and Compliance Officer maintains the Compliance Register, documenting all applicable data protection laws and industry-specific regulations.",
+   "The Legal Department reviews the contractual security obligations for all new client MSAs during the vendor onboarding process.",
+   "Our regulatory requirements matrix is audited quarterly to ensure all statutory updates are reflected in our internal security controls.",
+   "All identified legal and regulatory obligations are mapped to specific technical controls within the GRC tool for tracking and verification."
+  ],
+  "ISO_A_5.32": [
+   "All employees must sign the Proprietary Information and Inventions Agreement during onboarding to ensure ownership of work product.",
+   "The Legal Department maintains a centralized register of all software licenses and trademarks, reviewed annually for compliance.",
+   "Developers must scan all third-party libraries using the approved SCA tool to identify and manage open-source license restrictions.",
+   "Access to the source code repository is restricted to authorized engineers and audited quarterly by the IT Manager."
+  ],
+  "ISO_A_5.33": [
+   "The IT Manager performs weekly encrypted backups of all financial records to a secure offsite cloud repository.",
+   "Access to the HR personnel files is restricted to authorized HR staff via Role-Based Access Control (RBAC) in the ERP system.",
+   "All legal contracts must be digitally signed and stored in the read-only archive to prevent unauthorized modification.",
+   "The Data Protection Officer reviews the record retention and disposal schedule annually to ensure secure deletion of expired data."
+  ],
+  "ISO_A_5.34": [
+   "The Data Protection Officer maintains the Record of Processing Activities (RoPA) to track all PII flows and legal bases.",
+   "All new third-party vendor contracts must undergo a Privacy Impact Assessment (PIA) before the procurement process is finalized.",
+   "The HR Manager conducts a quarterly audit of access permissions for the payroll system to ensure strict need-to-know access.",
+   "Personal data must be encrypted at rest using AES-256 and deleted automatically after the seven-year statutory retention period."
+  ],
+  "ISO_A_5.35": [
+   "The Internal Audit Manager will conduct a full security management system review every 12 months.",
+   "External consultants are engaged annually to perform an independent gap analysis of our technical controls and policies.",
+   "A formal security review is triggered automatically following any major infrastructure migration or organizational restructure.",
+   "All independent audit reports and remediation plans are logged in the Compliance Tracking Register for board approval."
+  ],
+  "ISO_A_5.36": [
+   "The CISO shall conduct quarterly compliance audits to verify adherence to the Acceptable Use Policy across all departments.",
+   "Internal auditors will document the results of monthly policy spot-checks in the Compliance Tracking Register.",
+   "Department heads must submit a signed compliance attestation form every six months to the Risk Management team.",
+   "The IT Manager reviews system configuration logs monthly to ensure technical settings align with the established security hardening standards."
+  ],
+  "ISO_A_5.37": [
+   "The IT Operations Manual contains step-by-step instructions for server patching and backup restoration, accessible to all System Administrators via the company SharePoint.",
+   "The Service Desk maintains a knowledge base of standard operating procedures for user provisioning and offboarding to ensure consistent access management.",
+   "Daily system health checks must be performed by the Infrastructure Team according to the checklists defined in the Data Center Operations Guide.",
+   "All critical system maintenance tasks are documented in the Technical Procedures Register, including required approvals and recovery steps for each process."
+  ],
+  "ISO_A_6.1": [
+   "HR must complete identity and criminal record checks for all new hires before their start date.",
+   "The Recruitment Team shall perform background screening proportional to the candidate's access level and role risk.",
+   "Employee screening records are maintained in the Personnel File and reviewed every two years for privileged users.",
+   "All candidates must undergo a reference check and qualification verification via the onboarding portal prior to contract signing."
+  ],
+  "ISO_A_6.2": [
+   "All new hire employment contracts must include the signed Information Security Agreement as a mandatory appendix.",
+   "The HR Manager ensures that confidentiality and non-disclosure clauses are integrated into all permanent and temporary staff agreements.",
+   "Employee roles and their specific security responsibilities are documented in the Job Description register and reviewed annually.",
+   "The onboarding checklist requires verification that the employee has signed the Acceptable Use Policy before granting system access."
+  ],
+  "ISO_A_6.3": [
+   "All new hires must complete the mandatory Security Awareness e-learning module within 10 days of joining.",
+   "The HR Manager maintains a training matrix recording the completion dates of annual phishing simulations for all staff.",
+   "Department heads shall conduct quarterly briefings to update their teams on changes to the Access Control Policy.",
+   "Privileged system administrators are required to attend specialized secure configuration training every twelve months."
+  ],
+  "ISO_A_6.4": [
+   "Employees who breach the Information Security Policy will be subject to the company's formal disciplinary procedure as outlined in the Employee Handbook.",
+   "The HR Manager shall maintain a secure log of all security-related disciplinary actions taken against staff and third-party contractors.",
+   "Upon discovery of a policy violation, the CISO will notify the Department Head and HR to initiate the standard misconduct review process.",
+   "All new hires must sign the Acceptable Use Policy, acknowledging that non-compliance may lead to warnings or termination of employment."
+  ],
+  "ISO_A_6.5": [
+   "All departing employees must sign a post-employment confidentiality agreement confirming their ongoing non-disclosure obligations regarding proprietary data.",
+   "The HR offboarding checklist includes a formal review of surviving legal duties and the return of all company-issued hardware.",
+   "Former consultants are reminded via email upon contract expiry that their data protection obligations remain in effect indefinitely.",
+   "The Legal Department maintains a register of active non-compete and confidentiality clauses for all senior management roles after their exit date."
+  ],
+  "ISO_A_6.6": [
+   "All new hires must sign the Standard Employee NDA during the onboarding process before receiving system access.",
+   "The Legal Department reviews the Third-Party Confidentiality Agreement template annually to ensure current data protection requirements are met.",
+   "The HR Personnel File contains signed non-disclosure records for all active employees and temporary contractors.",
+   "Vendors are required to execute a signed NDA prior to the exchange of any proprietary technical specifications or API documentation."
+  ],
+  "ISO_A_6.7": [
+   "All employees accessing corporate data from home must use the company-approved VPN with multi-factor authentication enabled.",
+   "The IT Department shall conduct quarterly audits of remote access logs to identify and revoke inactive user accounts.",
+   "Personnel working remotely are prohibited from storing sensitive client information on local hard drives or unencrypted portable media.",
+   "The Remote Work Request Form must be signed by the line manager and CISO before granting access to internal systems."
+  ],
+  "ISO_A_6.8": [
+   "Employees must report all suspected security breaches immediately via the 'Report Incident' button on the company intranet portal.",
+   "The IT Service Desk maintains a centralized Incident Log to record and track all reported security events from the moment of notification.",
+   "All staff are required to notify the Chief Information Security Officer (CISO) via email or phone if they observe unauthorized access to sensitive data.",
+   "The Security Operations Center (SOC) reviews the incident reporting queue every hour to ensure timely triage and escalation of reported events."
+  ],
+  "ISO_A_7.1": [
+   "The Facilities Manager maintains a site map identifying all restricted zones, including the server room and secure archive storage.",
+   "All external entry points to the data center are reinforced with badge-access readers and monitored by 24/7 CCTV surveillance.",
+   "Visitors must sign the guest log and be escorted by a staff member while inside the secure production area.",
+   "Security guards perform hourly perimeter patrols to ensure all secure doors are closed and locked."
+  ],
+  "ISO_A_7.2": [
+   "All employees must swipe their encrypted ID badges at the electronic readers to unlock server room doors.",
+   "The Facilities Manager reviews the physical access logs for the secure data center on a monthly basis.",
+   "Visitors are required to sign the guest register and wear a visible escort badge while inside the production zone.",
+   "Biometric scanners are installed at all primary entry points to the secure office perimeter to prevent unauthorized tailgating."
+  ],
+  "ISO_A_7.3": [
+   "The Facilities Manager maintains a physical access register to track all visitors entering the secure server room.",
+   "All external office doors must remain locked and are monitored 24/7 by the integrated CCTV system.",
+   "Security badges are required for entry to the production floor and are audited quarterly by the IT Security Officer.",
+   "Staff must follow the clean desk policy and lock all sensitive documents in approved cabinets before leaving the premises."
+  ],
+  "ISO_A_7.4": [
+   "The Facilities Manager reviews CCTV footage and motion sensor alerts daily to detect unauthorized entry into the server room.",
+   "All perimeter entry points are monitored 24/7 by the security operations center (SOC) via an integrated alarm system.",
+   "Security guards perform hourly physical patrols of the warehouse perimeter and log all findings in the site security register.",
+   "The electronic access control system generates real-time notifications to the IT team whenever a forced-door event is triggered."
+  ],
+  "ISO_A_7.5": [
+   "The Facilities Manager conducts a quarterly inspection of the server room fire suppression systems and environmental sensors.",
+   "All data center entry points are secured with biometric scanners and monitored by 24/7 CCTV surveillance.",
+   "The Disaster Recovery Plan includes specific mitigation steps for flood and power outage scenarios at the primary site.",
+   "Physical access logs for the secure archive area are reviewed monthly by the Security Officer to detect unauthorized entry."
+  ],
+  "ISO_A_7.6": [
+   "All visitors must sign the guest log and be escorted by a staff member while inside the server room.",
+   "The Facilities Manager performs weekly audits of badge access logs to ensure only authorized personnel enter the secure zone.",
+   "Clean desk and clear screen policies are enforced in the operations center to prevent unauthorized viewing of sensitive data.",
+   "CCTV footage of secure area entry points is reviewed monthly and retained for 90 days in the security archive."
+  ],
+  "ISO_A_7.7": [
+   "Employees must lock their workstations using Win+L whenever leaving their desks and clear all printed sensitive data into locked shredding bins before end-of-day.",
+   "The IT Department has configured a global Group Policy to automatically lock inactive screens after five minutes of idle time.",
+   "Office managers conduct weekly walkthroughs to ensure no unencrypted USB drives or passwords on sticky notes are left in open workspaces.",
+   "All physical documents containing PII must be stored in locked filing cabinets when not in active use by the assigned data owner."
+  ],
+  "ISO_A_7.8": [
+   "Server racks must be installed in locked cabinets within the restricted-access data center to prevent unauthorized physical tampering.",
+   "The Facilities Manager shall conduct quarterly inspections of network closets to ensure environmental controls and physical barriers remain intact.",
+   "All critical networking hardware must be positioned away from public-facing areas and protected by reinforced walls or security cages.",
+   "The Asset Register includes the physical location and protection status for all on-premises hardware, reviewed annually during the risk assessment."
+  ],
+  "ISO_A_7.9": [
+   "All company laptops must be encrypted and stored in a locked drawer when used at home or in hotels.",
+   "The IT Manager maintains a hardware asset register tracking the serial numbers and current locations of all remote workstations.",
+   "Employees must use a company-approved VPN and multi-factor authentication to access internal systems from off-site locations.",
+   "Quarterly audits are conducted to verify that all mobile devices are registered and compliant with the remote security baseline."
+  ],
+  "ISO_A_7.10": [
+   "The IT Asset Manager maintains a hardware register tracking all encrypted USB drives and external hard disks from procurement to decommissioning.",
+   "All backup tapes transported to off-site storage must be logged in the transit manifest and shipped in locked, tamper-evident containers.",
+   "Hard drives from retired laptops must be physically shredded by a certified vendor, with a certificate of destruction uploaded to the asset record.",
+   "Staff must label all removable media according to the Data Classification Matrix before transferring files between secure zones."
+  ],
+  "ISO_A_7.11": [
+   "The Facilities Manager performs quarterly load tests on the UPS and backup diesel generators to ensure continuous power to the server room.",
+   "All critical network switches and storage arrays must be connected to redundant power feeds from separate PDUs.",
+   "The Data Center Maintenance Log records all scheduled inspections and repairs of the HVAC and cooling systems.",
+   "Automatic failover to the secondary power grid is triggered immediately upon detection of a primary utility outage."
+  ],
+  "ISO_A_7.12": [
+   "The Facilities Manager conducts quarterly physical inspections of all server room cable trays to ensure conduits are sealed and secure.",
+   "All network cabling installed in public-facing areas must be encased in hardened steel conduits to prevent unauthorized physical access.",
+   "The IT Infrastructure team maintains a cable routing map and verifies that power and data lines are physically separated to avoid interference.",
+   "New office fit-outs require a sign-off from the Security Officer confirming that all data cabling is routed through secure, locked floor voids."
+  ],
+  "ISO_A_7.13": [
+   "The IT Infrastructure Manager shall perform quarterly preventative maintenance on all production servers to prevent unplanned downtime.",
+   "All hardware maintenance activities, including firmware updates and part replacements, must be logged in the Asset Maintenance Register.",
+   "Critical network switches are serviced bi-annually by certified vendors to ensure continuous availability of the corporate backbone.",
+   "The system administrator must verify the integrity of backup hardware monthly and document the results in the maintenance log."
+  ],
+  "ISO_A_7.14": [
+   "The IT Asset Manager must maintain a disposal log confirming that all hard drives were physically shredded or wiped using approved software.",
+   "Before reassigning laptops to new employees, the system administrator shall perform a factory reset and secure data erasure of the local storage.",
+   "All decommissioned servers must be entered into the hardware retirement register and verified as cleared of sensitive data before leaving the premises.",
+   "Quarterly audits of the e-waste bin will be conducted to ensure no intact storage media are disposed of without a signed sanitization certificate."
+  ],
+  "ISO_A_8.1": [
+   "All company laptops and mobile devices must have full-disk encryption enabled and be managed via the corporate MDM solution.",
+   "The IT Department shall perform monthly audits of endpoint security software to ensure antivirus definitions are up to date.",
+   "Users must lock their workstations using Win+L whenever leaving their desks to prevent unauthorized access to processed data.",
+   "The Asset Register tracks all issued hardware and records the date of the last security patch applied to each endpoint."
+  ],
+  "ISO_A_8.2": [
+   "Administrator privileges are granted only to approved IT roles via a formal request ticket and manager approval.",
+   "The IT Manager reviews the privileged access register quarterly to revoke rights for users who no longer require them.",
+   "Users must use separate standard accounts for daily tasks and dedicated admin accounts for system configuration changes.",
+   "All assignments of root or super-user access are logged in the identity management system with a documented business justification."
+  ],
+  "ISO_A_8.3": [
+   "Access to the production database is restricted to the DevOps team and granted via the Jira access request workflow.",
+   "The IT Manager reviews the user permissions matrix quarterly to ensure access rights align with current job roles.",
+   "All employees must complete the identity verification process before being granted entry to the secure server room.",
+   "HR notifies the System Administrator immediately upon employee termination to revoke all active directory accounts and VPN credentials."
+  ],
+  "ISO_A_8.4": [
+   "Access to the GitLab production repositories is restricted to authorized developers and granted via Jira ticket approval.",
+   "The Lead Developer reviews the source code access list on a quarterly basis to remove inactive accounts.",
+   "Write permissions for the main branch are disabled for all users; changes must be submitted via Merge Request and peer-reviewed.",
+   "All third-party software libraries are stored in a managed Artifactory instance with version control and vulnerability scanning."
+  ],
+  "ISO_A_8.5": [
+   "Multi-factor authentication (MFA) is mandatory for all remote access to the corporate VPN and cloud production environments.",
+   "The IT Administrator shall review the privileged access register quarterly to ensure authentication methods align with user roles.",
+   "All new user accounts must be provisioned with a complex password and a registered hardware token before system access is granted.",
+   "Password complexity requirements and rotation intervals are defined in the Access Control Matrix for all legacy on-premise applications."
+  ],
+  "ISO_A_8.6": [
+   "The IT Operations Manager reviews CPU, memory, and disk utilization reports monthly to forecast hardware upgrades.",
+   "Cloud resource auto-scaling is configured for all production clusters to maintain performance during peak traffic spikes.",
+   "Quarterly capacity planning meetings are held to align infrastructure procurement with the projected growth of the user base.",
+   "System administrators monitor storage thresholds via Zabbix and trigger expansion tickets when disk usage reaches 80%."
+  ],
+  "ISO_A_8.7": [
+   "All company endpoints must have the corporate EDR agent installed and active to provide real-time scanning and threat blocking.",
+   "The IT Department performs weekly reviews of the antivirus console logs to identify and remediate unresolved malware detections.",
+   "All new hires must complete the 'Phishing and Malware Prevention' training module within their first 14 days of employment.",
+   "The Security Officer maintains a register of approved software to prevent the installation of unauthorized or malicious executable files."
+  ],
+  "ISO_A_8.8": [
+   "The IT Manager performs weekly vulnerability scans on all production servers using Nessus to identify outdated software and missing patches.",
+   "All identified critical vulnerabilities must be remediated within 14 days, as documented in the Remediation Tracking Log.",
+   "The Security Team reviews monthly vendor security bulletins and CVE databases to assess the risk to the current system architecture.",
+   "Patch management cycles are executed quarterly, with a formal sign-off from the System Owner after successful UAT testing."
+  ],
+  "ISO_A_8.9": [
+   "The IT Infrastructure Manager maintains a hardened baseline configuration for all production servers and network switches in the Configuration Management Database (CMDB).",
+   "System administrators must document all changes to firewall rules and load balancer settings in the Change Request log before implementation.",
+   "Quarterly configuration audits are performed against the approved gold images to detect and remediate unauthorized drift in cloud environments.",
+   "All new software deployments require a signed-off security configuration checklist verifying that default passwords are changed and unnecessary ports are closed."
+  ],
+  "ISO_A_8.10": [
+   "The IT Administrator shall perform a monthly purge of temporary system logs and cached data older than 90 days.",
+   "HR must permanently delete candidate CVs from the recruitment portal within six months of the hiring decision.",
+   "All decommissioned hard drives and backup tapes must be physically shredded by an approved vendor to ensure data destruction.",
+   "Department heads are responsible for reviewing the records retention schedule annually to identify and authorize the deletion of expired files."
+  ],
+  "ISO_A_8.11": [
+   "Database administrators must apply dynamic data masking to all PII fields in the UAT and development environments.",
+   "The HR system automatically masks employee social security numbers, displaying only the last four digits to payroll clerks.",
+   "All customer support representatives shall use the anonymized data view when performing troubleshooting on production records.",
+   "Quarterly audits are conducted to verify that sensitive financial data is masked in accordance with GDPR requirements."
+  ],
+  "ISO_A_8.12": [
+   "The IT Administrator configures DLP rules on all corporate email gateways and cloud storage buckets to block the transmission of PII.",
+   "All company laptops are equipped with endpoint protection software that prevents sensitive files from being copied to unauthorized USB drives.",
+   "The Security Team reviews the data egress logs on a monthly basis to identify and investigate potential unauthorized data transfers.",
+   "Employees must use the approved encrypted file transfer portal when sending confidential client records to external third parties."
+  ],
+  "ISO_A_8.13": [
+   "The IT Administrator performs full encrypted backups of all production databases daily and incremental backups every six hours.",
+   "Quarterly restoration tests are conducted on the staging server to verify data integrity, with results logged in the Backup Verification Register.",
+   "All critical system configurations and virtual machine snapshots are replicated to the off-site disaster recovery vault every 24 hours.",
+   "The Infrastructure Team must validate the success of automated backup jobs every morning and escalate any failures via the ticketing system."
+  ],
+  "ISO_A_8.14": [
+   "Critical production databases are deployed in a high-availability cluster across two separate availability zones to prevent single points of failure.",
+   "The Infrastructure Manager reviews the failover capabilities of the primary data center quarterly to ensure recovery time objectives are met.",
+   "All core network switches are configured in redundant pairs with automatic failover enabled to maintain continuous connectivity for business operations.",
+   "The Business Continuity Register lists the secondary backup site and the synchronized mirroring frequency for all Tier 1 applications."
+  ],
+  "ISO_A_8.15": [
+   "The System Administrator must review security event logs on all production servers every 24 hours to identify unauthorized access attempts.",
+   "All application error logs and audit trails are automatically forwarded to the centralized SIEM for immutable storage and long-term retention.",
+   "The IT Operations team shall maintain a log register detailing the specific events captured for each critical business system.",
+   "Access to system log files is restricted to the Security Operations Center (SOC) to prevent unauthorized modification or deletion of records."
+  ],
+  "ISO_A_8.16": [
+   "The SOC team reviews SIEM alerts daily to identify and triage unauthorized access attempts across the production network.",
+   "All critical server logs are streamed to a central monitoring tool with automated triggers for CPU spikes and failed login bursts.",
+   "The IT Manager conducts a monthly review of the anomaly detection reports to validate that all security events were investigated.",
+   "Incident response workflows are triggered immediately when the IDS detects traffic patterns consistent with a DDoS attack or data exfiltration."
+  ],
+  "ISO_A_8.17": [
+   "All production servers and network devices must synchronize their system clocks with the internal NTP stratum 2 server.",
+   "The IT Infrastructure Manager reviews NTP synchronization logs monthly to ensure time drift remains within acceptable thresholds.",
+   "During server provisioning, the systems administrator configures the time zone to UTC and links the OS to the approved corporate time source.",
+   "The Asset Register identifies all critical systems requiring clock synchronization and maps them to their respective authoritative time providers."
+  ],
+  "ISO_A_8.18": [
+   "Access to PowerShell and Registry Editor is restricted to Domain Administrators and requires a ticketed change request.",
+   "The IT Manager reviews the privileged utility software register quarterly to ensure all installed tools are authorized.",
+   "System administrators must use dedicated jump hosts and separate privileged accounts when executing low-level system utilities.",
+   "All use of diagnostic tools capable of bypassing security kernels is logged in the privileged access audit trail."
+  ],
+  "ISO_A_8.19": [
+   "Only authorized System Administrators are permitted to install or update software on production servers using privileged accounts.",
+   "All software installation requests must be submitted via the ITSM portal and approved by the Change Advisory Board before deployment.",
+   "The IT team shall maintain a centralized software inventory register, documenting the version and approval date for all installed applications.",
+   "Standard operating environments (SOEs) are enforced via Group Policy to prevent users from executing unauthorized installers on corporate workstations."
+  ],
+  "ISO_A_8.20": [
+   "The Network Administrator must review firewall rule sets and access control lists on a quarterly basis.",
+   "All network switches and routers are configured with disabled unused ports and encrypted management protocols.",
+   "Network segmentation is enforced via VLANs to isolate the production environment from the corporate guest Wi-Fi.",
+   "The IT team maintains a hardware asset register documenting the firmware version and patch level of all edge devices."
+  ],
+  "ISO_A_8.21": [
+   "The Network Administrator reviews firewall rule sets and VPN access logs on a quarterly basis to ensure alignment with the approved security baseline.",
+   "All third-party managed network services must be governed by a Service Level Agreement (SLA) specifying uptime requirements and incident response timelines.",
+   "The IT Infrastructure Team maintains a Network Services Register documenting the encryption protocols and authentication methods implemented for each active connection.",
+   "New network service requests require a security impact assessment and formal sign-off by the CISO before deployment into the production environment."
+  ],
+  "ISO_A_8.22": [
+   "Production environments are logically isolated from development and test networks via firewall rules.",
+   "Guest Wi-Fi traffic is routed through a separate VLAN to prevent access to the corporate internal network.",
+   "The network administrator reviews firewall access control lists quarterly to ensure strict zone segregation.",
+   "Payment processing systems are hosted in a dedicated DMZ with restricted ingress and egress traffic."
+  ],
+  "ISO_A_8.23": [
+   "The IT Department configures the corporate firewall to block access to known phishing and malware domains by default.",
+   "All company laptops must have the approved web filtering agent installed and active to restrict high-risk website categories.",
+   "The Security Analyst reviews the web proxy logs monthly to identify and block emerging malicious URLs.",
+   "Requests for website whitelisting are submitted via the service desk and approved by the CISO based on business necessity."
+  ],
+  "ISO_A_8.24": [
+   "The IT Manager shall rotate all administrative SSH keys and service account passwords every 90 days.",
+   "All portable storage devices and company laptops must utilize AES-256 full disk encryption.",
+   "The Key Management Register tracks the lifecycle, ownership, and storage location of all production encryption keys.",
+   "Encryption keys must be stored in the corporate Hardware Security Module (HSM) with access restricted to authorized security officers."
+  ],
+  "ISO_A_8.25": [
+   "The Lead Developer must approve the security checklist for every sprint before code is merged into the production branch.",
+   "All custom software undergoes a mandatory static analysis scan (SAST) and a peer security review during the development phase.",
+   "The SDLC Policy defines the required security gates and sign-off criteria for moving applications from staging to live environments.",
+   "Quarterly audits of the Jira development board are conducted to verify that vulnerability remediation tasks are tracked and closed."
+  ],
+  "ISO_A_8.26": [
+   "The Product Owner must document all security functional requirements in the Jira backlog before the development sprint begins.",
+   "All third-party software procurement requests require a completed Security Assessment Questionnaire approved by the CISO.",
+   "Security requirements are defined in the System Design Document and signed off by the Lead Architect during the design phase.",
+   "The development team shall map each application feature to its corresponding security control in the Requirements Traceability Matrix."
+  ],
+  "ISO_A_8.27": [
+   "The Lead Architect must review and approve the Secure Design Document before any production code development begins.",
+   "All new software deployments are validated against the Hardening Checklist to ensure secure configuration of the OS and database.",
+   "The Engineering Team updates the Secure Coding Standards annually to include protections against the latest OWASP Top 10 vulnerabilities.",
+   "Security architecture reviews are recorded in the Project Governance Log for every major system change or new integration."
+  ],
+  "ISO_A_8.28": [
+   "The Lead Developer must review all pull requests against the approved Secure Coding Standard before merging code into the production branch.",
+   "All software engineers are required to complete OWASP Top 10 security training annually to ensure vulnerability prevention in the codebase.",
+   "Static Analysis Security Testing (SAST) tools are integrated into the CI/CD pipeline to automatically scan for coding flaws during every build.",
+   "The development team maintains a vulnerability remediation log to track and resolve security bugs identified during penetration testing."
+  ],
+  "ISO_A_8.29": [
+   "The QA Lead must execute the approved security test plan and sign off on the vulnerability report before any code is merged into production.",
+   "All new software releases require a documented penetration test and a static analysis scan as part of the CI/CD pipeline.",
+   "User Acceptance Testing (UAT) scripts must include specific security test cases to verify access control and input validation requirements.",
+   "The security team performs quarterly vulnerability assessments on the staging environment to identify flaws prior to the final deployment phase."
+  ],
+  "ISO_A_8.30": [
+   "The Procurement Manager must conduct quarterly performance reviews of all third-party software vendors against the agreed SLAs.",
+   "All outsourced code must undergo a security scan and be approved by the Lead Developer before merging into the production branch.",
+   "The Vendor Risk Register tracks the security compliance status and audit history of all external development partners.",
+   "Project managers shall hold bi-weekly synchronization meetings with outsourced teams to monitor development milestones and security requirements."
+  ],
+  "ISO_A_8.31": [
+   "Developers are prohibited from having write access to the production database and must request deployment via the Change Advisory Board.",
+   "The CI/CD pipeline automatically deploys code from the staging environment to production only after a successful peer review and security scan.",
+   "Production data is masked and anonymized before being restored into the UAT environment for functional testing.",
+   "Network segmentation is enforced via VLANs and firewalls to isolate the development subnet from the live customer-facing infrastructure."
+  ],
+  "ISO_A_8.32": [
+   "All production environment modifications must be documented in a Jira ticket and approved by the Change Advisory Board before deployment.",
+   "The System Administrator maintains a Change Log recording the date, nature of the update, and the authorized requester for all server configurations.",
+   "Emergency patches are deployed following the Hotfix Procedure, with retrospective review and sign-off completed within 48 hours.",
+   "The DevOps team performs a risk assessment and backup verification for every scheduled release to the core banking application."
+  ],
+  "ISO_A_8.33": [
+   "The QA Lead must sanitize all production data to remove PII before importing it into the staging environment.",
+   "Test datasets are stored in encrypted volumes with access restricted to authorized developers via the IAM role 'Test-Admin'.",
+   "All synthetic test data must be deleted from the UAT environment within 48 hours of the release sign-off.",
+   "The System Administrator maintains a register of all test accounts, reviewing permissions on a quarterly basis."
+  ],
+  "ISO_A_8.34": [
+   "The IT Manager must sign off on the penetration testing plan before any scans are executed against the production environment.",
+   "All vulnerability assessments on live systems require a formal Change Request ticket approved by the System Owner.",
+   "External auditors must coordinate the timing and scope of their technical tests with the Head of Infrastructure to avoid service disruption.",
+   "The annual security audit schedule is reviewed and agreed upon by the CISO and operational leads prior to commencement."
+  ]
+ }
+}

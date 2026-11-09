@@ -1,0 +1,119 @@
+{
+    "_note": "Settings of the reported runs (R5 retrieval, both judges). run_code_sha256 identifies the code that produced the results; released_code_sha256 is the cleaned code in code/ (see README, 'Changes from the run code').",
+    "verdict_rule": "Compliant only if evidence was assessed, every assessor vote is YES (coverage threshold 1.0), the evidence gate did not fire, and the contrastive verifier listed the target control; see scripts/reproduce_tables.py, verdict().",
+    "retrieval": {
+        "dense_encoder": "sentence-transformers/paraphrase-multilingual-mpnet-base-v2",
+        "lexical_index": "TF-IDF",
+        "candidates_per_query": {
+            "dense": 20,
+            "tfidf": 20
+        },
+        "fusion": "reciprocal rank fusion, k = 60",
+        "reranker": "cross-encoder/mmarco-mMiniLMv2-L12-H384-v1",
+        "kept_per_control": "top 6 against the control text, plus top 3 per evidence query",
+        "context_per_sentence": "section heading, list lead-in, up to 900 characters of the provision",
+        "queries_per_control": "English control text, fixed Indonesian translation, up to 8 Indonesian element queries, 4 evidence queries",
+        "evidence_queries": "queries/hyde_queries_v5.json (written once by gemma4:31b, temperature 0); own-query runs use queries/hyde_queries_v5_gptoss.json",
+        "section_expansion": "2 sections with the closest mean sentence embedding per evidence query, up to 25 sentences each"
+    },
+    "safeguards": {
+        "evidence_gate": "Not Compliant if the top reranker score among the evidence passed to the judge is below 0.15 (GROUNDING_THRESHOLD in code/main.py), unless a sentence added by control-specific keyword matching scores above 0.05 (FORCED_CE_MINIMUM); in the reported runs the exception applied only to SecureNusantara A.6.2. The value was chosen on the nine development companies, without a systematic search, to block almost no controls designed as implemented, and was never changed.",
+        "contrastive_verifier": "the judge model, given the full Annex A catalog, must list the target control as established (VERIFY_MODE=annexa; recorded, applied when scoring)"
+    },
+    "pipeline_options": {
+        "_note": "Environment of the runs. The gate and verifier outcomes were recorded (GATE_MODE=assess, VERIFY=record) and applied when scoring (gate on, verifier applied), as in scripts/reproduce_tables.py.",
+        "EXPANSION": "off",
+        "CONTEXT_MODE": "provision",
+        "RUBRIC": "v2",
+        "AGGREGATION": "threshold",
+        "QUOTE_MODE": "full_sentence",
+        "GATE_MODE": "assess",
+        "VERIFY": "record",
+        "VERIFY_MODE": "annexa",
+        "EVAL_WORKERS": 4
+    },
+    "judges": {
+        "serving": "Ollama cloud (OpenAI-compatible endpoint), 4 parallel workers",
+        "gemma4:31b": {
+            "tag": "gemma4:31b-cloud",
+            "temperature": 0,
+            "top_p": 1.0,
+            "response_format": "json_object",
+            "thinking": "off"
+        },
+        "gpt-oss:120b": {
+            "tag": "gpt-oss:120b-cloud",
+            "temperature": 0,
+            "top_p": 1.0,
+            "response_format": "json_object",
+            "reasoning_effort": "medium (Ollama default)"
+        },
+        "other": "no seed; no context-length (num_ctx) or output-token (max_tokens) limit sent, so the service's unreported limits applied; 180 s request timeout; up to 6 retries with exponential backoff",
+        "digests": "not exposed for cloud-served models; served versions may change, and run dates record when runs took place, not which versions were served"
+    },
+    "run_dates": {
+        "constructed_corpus_and_public_sets": "2026-10-14 to 2026-10-15",
+        "government_documents": "2026-10-15 to 2026-10-16",
+        "gpt-oss_own_query_runs": "2026-10-14 (Hack23), 2026-10-18 (SecureNusantara, Bappenas, DJPb)",
+        "government_document_repeats": "2026-11-07 to 2026-11-08 (two repeats per judge, same cached evidence and code)",
+        "constructed_corpus_rerun_620_controls": "seven constructed companies judged a second time on the same evidence; its date and raw files are not part of this package (summary figures only, paper Section IV-F)",
+        "_source": "timing logs of each run (results/run_times.csv for the constructed corpus and public sets)"
+    },
+    "prompt_sha256_prefix": {
+        "system": "8ad50ab036776ea4",
+        "extractor": "63c30ee5d6680cb0",
+        "assessor": "abad054c61be083c",
+        "verifier": "1ed3ffa904cfddc0"
+    },
+    "run_code_sha256": {
+        "main.py": "ab4682d7109ff54d414a17c12a3bd6c2cca8a2906877454cb4eee186755c7df4",
+        "evaluate_golden.py": "251495c527ce2c7c89f9070ebe93641523b0bb0116aeaac3d294204d963df19a",
+        "analyze_v2.py": "43dfd7634d42b15bcdd448c2f38a4eb2e1ca7cf4b39863e6db727c42777bc979",
+        "pipeline_v3.py": "cf0969b61e58f63756cd579c8f4099c5ff4519c7b8f6bd8bd8587e4c49c21969",
+        "v3_eval.py": "5e6f7241548290a6b1b8d53df1e68774b814f8693c818db186fdcbbdebbc5a3f",
+        "v5_retrieval.py": "c2ed79ffbb6bb99578b6d5b83620d6b485b4629fc32b0d671b14e738f7a08036",
+        "r5_job.py": "d5a8d1344afc35394c109e2ff9b47ae8c158aa0f56883a9aa2632884be1fa9bf",
+        "r5_job_ossq.py": "59a5aa69e7c10f65f5b6105f22efbc4cfb3cc31d39bc286fe5cbc78e34292d2c",
+        "queries/hyde_queries_v5.json": "c8876a6eb84d22f22150ed1d68648e51314eb3c88f5be474421b874fc4de59b9",
+        "queries/hyde_queries_v5_gptoss.json": "0c5ff828810896f763ee8983e88a371cea994e62a94181576ea6ef4b6c9b023e"
+    },
+    "released_code_sha256": {
+        "evaluate_golden.py": "251495c527ce2c7c89f9070ebe93641523b0bb0116aeaac3d294204d963df19a",
+        "extract_pdf_text.py": "258bee90f15a695ee8334bbcbc46f9d0f5cbdd9931ecc766c8150d7d843be9ee",
+        "ingest_bappenas.py": "a2681035c0e2d7f53cae86f0a022f7299884bced54a0957cf9e3619abff29b26",
+        "ingest_djpb.py": "1b3a624c04ee91d95079d68cbe23f7ad9608f3f8bd9740e20119ceb82d1d7d12",
+        "ingest_hack23.py": "b1d2d75016a73130e491c570dba76e104445e80dfadfea623efd0c89ab045959",
+        "ingest_mssp21.py": "c5945492371e8466e9c4b2321566a1139d8c5ab74f510e52247daef338cf0290",
+        "main.py": "80166eea7e0eb4fb007078791f89681d7b1f961c3acb37ac33662064ac072f61",
+        "make_hyde_queries.py": "af7e58879d90f4dbf18f7e4dc8a909eaedc44b34cc987f35982c80b0bf506f8d",
+        "make_iso_elements.py": "b6921e2740725f95e7e667f3534b3c8324c9e2798cedbc69b31fc21c99e0156c",
+        "make_iso_id.py": "2f36bd726ae12c440ca5432d287f79c4872950ca6abf6f3ea74b07ab805144fc",
+        "ocr_lines.py": "db787fa556ea54c11e2091cf14def27e384770502818e063c2d69fdb6c722fe3",
+        "pipeline_v3.py": "561d015e0c1311f8ef0d1c1efb457195ec69710fcfff65793057b071866dab6c",
+        "r5_job.py": "3358b899b35635b07c381aaa07ea66f191f4d0726e5cec5f2bc3f8dc8bf08ba4",
+        "r5_job_ossq.py": "31bbc2f6203a8b6971b784121bb98fd95d6a507541e8b27602e4944a335a2a2d",
+        "v3_eval.py": "c69eb9e087f3b9f58766559eb86f2a76c0ad172069ba88ff0b4f5bdb37d458cf",
+        "v5_retrieval.py": "dff2a76f76afd47e7cf52df143e96e0ba2defc33eb862abdef12bf113c7517f4"
+    },
+    "inputs": {
+        "_note": "Corpora as judged in the reported runs. scripts/prepare_inputs.py and the code/ingest_*.py scripts rebuild them; compare the SHA-256 of each segmented corpus file. All corpus files have CRLF line endings, which the ingest scripts write on every platform.",
+        "segmented_corpus_sha256": {
+            "BAPPENAS-PPN.json": "ee226c73568c2c8cf1134bfca0da0dca9d994971fdc49b9f85a50d9d871eb923",
+            "DJPB-PER1.json": "efd1a23fd1b862d5ad0655a43a91b6aa58979ef9835eaaf891f8c25cf2848048",
+            "MSSP21-SecureNusantara.json": "a7ffaf274d386733242dc23a374de820a1ae5b958547d9865099c9d68d30e4e9",
+            "HACK23-*.json (31 files; hash over sorted file names and bytes)": "4bc46b3d7355183233c6d06c657e0a7844845d580478547fd0ce63bb44fe48a5"
+        },
+        "source_files": {
+            "Bappenas guideline No. 2/2024": {
+                "pdf_sha256": "a77452684274e9d297bc9476276e6752c26a502cadb6f30c77dd8e1c8869e2ad",
+                "text_sha256 (extract_pdf_text.py, pypdf 6.14.2)": "c647f05542817d90e6bf4190f50a49d667bc4019882d6745a9ebd3257c47e307"
+            },
+            "DJPb PER-1/PB/2021": {
+                "pdf_sha256": "e14ee9622264a3f3323a803af0f0463ba7e8f6aa85c2267a78037a507b9f563a",
+                "text_sha256 (ocr_lines.py on Windows OCR word boxes)": "c320d1c5b46b4deb60b1488786f01ec4f6fdcdd9cf8379563108899576490f4f"
+            },
+            "Hack23/ISMS-PUBLIC": "commit 9424eb3; ingest_hack23.py --policies-only (31 documents)",
+            "hazwanjaafar/mssp-isms-iso27001-simulation": "commit 8d2def4; ingest_mssp21.py (21 documents, unmodified, including the SoA implementation-status column)"
+        }
+    }
+}

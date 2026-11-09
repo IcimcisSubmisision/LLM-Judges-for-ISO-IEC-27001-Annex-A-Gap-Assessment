@@ -1,0 +1,187 @@
+document,control,rater_A,rater_B,rater_C,majority_binary
+Bappenas,A.5.1,Minor Gap,Minor Gap,Minor Gap,Not Compliant
+Bappenas,A.5.2,No Gap,No Gap,No Gap,Compliant
+Bappenas,A.5.3,No Gap,No Gap,No Gap,Compliant
+Bappenas,A.5.4,No Gap,No Gap,No Gap,Compliant
+Bappenas,A.5.5,Major Gap,Major Gap,Major Gap,Not Compliant
+Bappenas,A.5.6,Major Gap,Major Gap,Major Gap,Not Compliant
+Bappenas,A.5.7,No Gap,No Gap,No Gap,Compliant
+Bappenas,A.5.8,Minor Gap,Minor Gap,Minor Gap,Not Compliant
+Bappenas,A.5.9,No Gap,No Gap,No Gap,Compliant
+Bappenas,A.5.10,No Gap,No Gap,No Gap,Compliant
+Bappenas,A.5.11,No Gap,No Gap,No Gap,Compliant
+Bappenas,A.5.12,Minor Gap,Minor Gap,Minor Gap,Not Compliant
+Bappenas,A.5.13,Major Gap,Major Gap,Major Gap,Not Compliant
+Bappenas,A.5.14,Minor Gap,Minor Gap,Minor Gap,Not Compliant
+Bappenas,A.5.15,No Gap,No Gap,No Gap,Compliant
+Bappenas,A.5.16,No Gap,No Gap,No Gap,Compliant
+Bappenas,A.5.17,Minor Gap,Minor Gap,Minor Gap,Not Compliant
+Bappenas,A.5.18,No Gap,No Gap,No Gap,Compliant
+Bappenas,A.5.19,Minor Gap,Minor Gap,Minor Gap,Not Compliant
+Bappenas,A.5.20,Minor Gap,Minor Gap,Minor Gap,Not Compliant
+Bappenas,A.5.21,Minor Gap,Minor Gap,Minor Gap,Not Compliant
+Bappenas,A.5.22,Minor Gap,Minor Gap,Minor Gap,Not Compliant
+Bappenas,A.5.23,No Gap,No Gap,No Gap,Compliant
+Bappenas,A.5.24,No Gap,Minor Gap,No Gap,Compliant
+Bappenas,A.5.25,No Gap,No Gap,Minor Gap,Compliant
+Bappenas,A.5.26,No Gap,Minor Gap,No Gap,Compliant
+Bappenas,A.5.27,Minor Gap,Minor Gap,Minor Gap,Not Compliant
+Bappenas,A.5.28,Minor Gap,Minor Gap,Minor Gap,Not Compliant
+Bappenas,A.5.29,No Gap,No Gap,No Gap,Compliant
+Bappenas,A.5.30,No Gap,No Gap,No Gap,Compliant
+Bappenas,A.5.31,Minor Gap,Major Gap,Minor Gap,Not Compliant
+Bappenas,A.5.32,No Gap,No Gap,No Gap,Compliant
+Bappenas,A.5.33,Minor Gap,Minor Gap,Minor Gap,Not Compliant
+Bappenas,A.5.34,Minor Gap,Minor Gap,Minor Gap,Not Compliant
+Bappenas,A.5.35,Minor Gap,Minor Gap,No Gap,Not Compliant
+Bappenas,A.5.36,No Gap,No Gap,No Gap,Compliant
+Bappenas,A.5.37,Minor Gap,Minor Gap,Minor Gap,Not Compliant
+Bappenas,A.6.1,Minor Gap,Minor Gap,Minor Gap,Not Compliant
+Bappenas,A.6.2,Minor Gap,Minor Gap,Minor Gap,Not Compliant
+Bappenas,A.6.3,No Gap,No Gap,No Gap,Compliant
+Bappenas,A.6.4,Minor Gap,Minor Gap,Minor Gap,Not Compliant
+Bappenas,A.6.5,Major Gap,Major Gap,Major Gap,Not Compliant
+Bappenas,A.6.6,Minor Gap,Minor Gap,Minor Gap,Not Compliant
+Bappenas,A.6.7,No Gap,No Gap,No Gap,Compliant
+Bappenas,A.6.8,No Gap,No Gap,No Gap,Compliant
+Bappenas,A.7.1,Minor Gap,Minor Gap,Minor Gap,Not Compliant
+Bappenas,A.7.2,No Gap,No Gap,No Gap,Compliant
+Bappenas,A.7.3,No Gap,Minor Gap,Minor Gap,Not Compliant
+Bappenas,A.7.4,No Gap,No Gap,No Gap,Compliant
+Bappenas,A.7.5,No Gap,No Gap,No Gap,Compliant
+Bappenas,A.7.6,Major Gap,Major Gap,Major Gap,Not Compliant
+Bappenas,A.7.7,Minor Gap,Minor Gap,Minor Gap,Not Compliant
+Bappenas,A.7.8,No Gap,No Gap,No Gap,Compliant
+Bappenas,A.7.9,No Gap,No Gap,No Gap,Compliant
+Bappenas,A.7.10,Minor Gap,Minor Gap,Minor Gap,Not Compliant
+Bappenas,A.7.11,No Gap,No Gap,No Gap,Compliant
+Bappenas,A.7.12,No Gap,No Gap,No Gap,Compliant
+Bappenas,A.7.13,No Gap,No Gap,No Gap,Compliant
+Bappenas,A.7.14,No Gap,No Gap,No Gap,Compliant
+Bappenas,A.8.1,No Gap,No Gap,No Gap,Compliant
+Bappenas,A.8.2,No Gap,No Gap,No Gap,Compliant
+Bappenas,A.8.3,No Gap,No Gap,No Gap,Compliant
+Bappenas,A.8.4,Minor Gap,Minor Gap,Minor Gap,Not Compliant
+Bappenas,A.8.5,No Gap,No Gap,No Gap,Compliant
+Bappenas,A.8.6,No Gap,No Gap,No Gap,Compliant
+Bappenas,A.8.7,No Gap,No Gap,No Gap,Compliant
+Bappenas,A.8.8,No Gap,No Gap,No Gap,Compliant
+Bappenas,A.8.9,No Gap,No Gap,No Gap,Compliant
+Bappenas,A.8.10,No Gap,No Gap,No Gap,Compliant
+Bappenas,A.8.11,Minor Gap,Minor Gap,Minor Gap,Not Compliant
+Bappenas,A.8.12,Minor Gap,Minor Gap,Minor Gap,Not Compliant
+Bappenas,A.8.13,No Gap,No Gap,No Gap,Compliant
+Bappenas,A.8.14,Minor Gap,Minor Gap,Minor Gap,Not Compliant
+Bappenas,A.8.15,No Gap,No Gap,No Gap,Compliant
+Bappenas,A.8.16,No Gap,No Gap,No Gap,Compliant
+Bappenas,A.8.17,No Gap,No Gap,No Gap,Compliant
+Bappenas,A.8.18,Minor Gap,Minor Gap,Minor Gap,Not Compliant
+Bappenas,A.8.19,No Gap,No Gap,No Gap,Compliant
+Bappenas,A.8.20,Minor Gap,Minor Gap,Minor Gap,Not Compliant
+Bappenas,A.8.21,No Gap,No Gap,No Gap,Compliant
+Bappenas,A.8.22,Minor Gap,Minor Gap,Minor Gap,Not Compliant
+Bappenas,A.8.23,No Gap,No Gap,No Gap,Compliant
+Bappenas,A.8.24,No Gap,No Gap,No Gap,Compliant
+Bappenas,A.8.25,No Gap,No Gap,No Gap,Compliant
+Bappenas,A.8.26,No Gap,No Gap,No Gap,Compliant
+Bappenas,A.8.27,Minor Gap,Minor Gap,Minor Gap,Not Compliant
+Bappenas,A.8.28,No Gap,No Gap,No Gap,Compliant
+Bappenas,A.8.29,No Gap,No Gap,No Gap,Compliant
+Bappenas,A.8.30,Minor Gap,Minor Gap,Minor Gap,Not Compliant
+Bappenas,A.8.31,No Gap,No Gap,No Gap,Compliant
+Bappenas,A.8.32,No Gap,No Gap,No Gap,Compliant
+Bappenas,A.8.33,Minor Gap,Minor Gap,Minor Gap,Not Compliant
+Bappenas,A.8.34,No Gap,No Gap,No Gap,Compliant
+DJPb,A.5.1,Minor Gap,Minor Gap,Minor Gap,Not Compliant
+DJPb,A.5.2,No Gap,No Gap,No Gap,Compliant
+DJPb,A.5.3,Minor Gap,Minor Gap,Minor Gap,Not Compliant
+DJPb,A.5.4,No Gap,No Gap,No Gap,Compliant
+DJPb,A.5.5,No Gap,No Gap,No Gap,Compliant
+DJPb,A.5.6,No Gap,No Gap,No Gap,Compliant
+DJPb,A.5.7,Major Gap,Major Gap,Major Gap,Not Compliant
+DJPb,A.5.8,Minor Gap,Minor Gap,No Gap,Not Compliant
+DJPb,A.5.9,Minor Gap,Minor Gap,Minor Gap,Not Compliant
+DJPb,A.5.10,Minor Gap,Minor Gap,Minor Gap,Not Compliant
+DJPb,A.5.11,No Gap,No Gap,No Gap,Compliant
+DJPb,A.5.12,Minor Gap,Minor Gap,Minor Gap,Not Compliant
+DJPb,A.5.13,Minor Gap,Minor Gap,Minor Gap,Not Compliant
+DJPb,A.5.14,No Gap,No Gap,No Gap,Compliant
+DJPb,A.5.15,No Gap,No Gap,No Gap,Compliant
+DJPb,A.5.16,No Gap,No Gap,No Gap,Compliant
+DJPb,A.5.17,Minor Gap,Minor Gap,Minor Gap,Not Compliant
+DJPb,A.5.18,No Gap,No Gap,No Gap,Compliant
+DJPb,A.5.19,Minor Gap,Minor Gap,No Gap,Not Compliant
+DJPb,A.5.20,No Gap,No Gap,No Gap,Compliant
+DJPb,A.5.21,Minor Gap,Minor Gap,Minor Gap,Not Compliant
+DJPb,A.5.22,No Gap,Minor Gap,No Gap,Compliant
+DJPb,A.5.23,Major Gap,Major Gap,Major Gap,Not Compliant
+DJPb,A.5.24,Minor Gap,Minor Gap,Minor Gap,Not Compliant
+DJPb,A.5.25,No Gap,No Gap,No Gap,Compliant
+DJPb,A.5.26,No Gap,No Gap,No Gap,Compliant
+DJPb,A.5.27,No Gap,No Gap,No Gap,Compliant
+DJPb,A.5.28,No Gap,No Gap,No Gap,Compliant
+DJPb,A.5.29,No Gap,No Gap,No Gap,Compliant
+DJPb,A.5.30,Minor Gap,Minor Gap,Minor Gap,Not Compliant
+DJPb,A.5.31,No Gap,No Gap,No Gap,Compliant
+DJPb,A.5.32,No Gap,No Gap,No Gap,Compliant
+DJPb,A.5.33,No Gap,No Gap,No Gap,Compliant
+DJPb,A.5.34,No Gap,No Gap,No Gap,Compliant
+DJPb,A.5.35,No Gap,No Gap,No Gap,Compliant
+DJPb,A.5.36,No Gap,No Gap,No Gap,Compliant
+DJPb,A.5.37,No Gap,No Gap,No Gap,Compliant
+DJPb,A.6.1,Minor Gap,Minor Gap,Minor Gap,Not Compliant
+DJPb,A.6.2,Minor Gap,Minor Gap,Minor Gap,Not Compliant
+DJPb,A.6.3,No Gap,No Gap,No Gap,Compliant
+DJPb,A.6.4,Minor Gap,Minor Gap,Minor Gap,Not Compliant
+DJPb,A.6.5,Minor Gap,Minor Gap,Minor Gap,Not Compliant
+DJPb,A.6.6,Minor Gap,Minor Gap,Minor Gap,Not Compliant
+DJPb,A.6.7,No Gap,No Gap,No Gap,Compliant
+DJPb,A.6.8,No Gap,No Gap,No Gap,Compliant
+DJPb,A.7.1,No Gap,No Gap,No Gap,Compliant
+DJPb,A.7.2,No Gap,No Gap,No Gap,Compliant
+DJPb,A.7.3,No Gap,No Gap,No Gap,Compliant
+DJPb,A.7.4,Major Gap,Minor Gap,Minor Gap,Not Compliant
+DJPb,A.7.5,No Gap,No Gap,No Gap,Compliant
+DJPb,A.7.6,No Gap,No Gap,No Gap,Compliant
+DJPb,A.7.7,Minor Gap,No Gap,No Gap,Compliant
+DJPb,A.7.8,No Gap,No Gap,No Gap,Compliant
+DJPb,A.7.9,No Gap,No Gap,No Gap,Compliant
+DJPb,A.7.10,No Gap,No Gap,No Gap,Compliant
+DJPb,A.7.11,No Gap,No Gap,No Gap,Compliant
+DJPb,A.7.12,Minor Gap,Minor Gap,No Gap,Not Compliant
+DJPb,A.7.13,No Gap,No Gap,No Gap,Compliant
+DJPb,A.7.14,Minor Gap,Minor Gap,Minor Gap,Not Compliant
+DJPb,A.8.1,No Gap,No Gap,No Gap,Compliant
+DJPb,A.8.2,No Gap,No Gap,No Gap,Compliant
+DJPb,A.8.3,No Gap,No Gap,No Gap,Compliant
+DJPb,A.8.4,No Gap,Minor Gap,Minor Gap,Not Compliant
+DJPb,A.8.5,No Gap,No Gap,No Gap,Compliant
+DJPb,A.8.6,No Gap,No Gap,No Gap,Compliant
+DJPb,A.8.7,No Gap,No Gap,No Gap,Compliant
+DJPb,A.8.8,No Gap,No Gap,No Gap,Compliant
+DJPb,A.8.9,Major Gap,Major Gap,Major Gap,Not Compliant
+DJPb,A.8.10,Minor Gap,Minor Gap,Minor Gap,Not Compliant
+DJPb,A.8.11,Major Gap,Major Gap,Major Gap,Not Compliant
+DJPb,A.8.12,Major Gap,Major Gap,Major Gap,Not Compliant
+DJPb,A.8.13,No Gap,No Gap,No Gap,Compliant
+DJPb,A.8.14,No Gap,No Gap,No Gap,Compliant
+DJPb,A.8.15,No Gap,No Gap,No Gap,Compliant
+DJPb,A.8.16,Minor Gap,Minor Gap,Minor Gap,Not Compliant
+DJPb,A.8.17,No Gap,No Gap,No Gap,Compliant
+DJPb,A.8.18,No Gap,No Gap,No Gap,Compliant
+DJPb,A.8.19,No Gap,No Gap,No Gap,Compliant
+DJPb,A.8.20,No Gap,No Gap,No Gap,Compliant
+DJPb,A.8.21,Minor Gap,Minor Gap,Minor Gap,Not Compliant
+DJPb,A.8.22,No Gap,No Gap,No Gap,Compliant
+DJPb,A.8.23,Major Gap,Major Gap,Major Gap,Not Compliant
+DJPb,A.8.24,Minor Gap,Minor Gap,Minor Gap,Not Compliant
+DJPb,A.8.25,No Gap,No Gap,No Gap,Compliant
+DJPb,A.8.26,No Gap,No Gap,No Gap,Compliant
+DJPb,A.8.27,Minor Gap,Minor Gap,No Gap,Not Compliant
+DJPb,A.8.28,Major Gap,Major Gap,Minor Gap,Not Compliant
+DJPb,A.8.29,Minor Gap,Minor Gap,No Gap,Not Compliant
+DJPb,A.8.30,Minor Gap,Minor Gap,Minor Gap,Not Compliant
+DJPb,A.8.31,No Gap,No Gap,No Gap,Compliant
+DJPb,A.8.32,No Gap,No Gap,No Gap,Compliant
+DJPb,A.8.33,Minor Gap,Minor Gap,No Gap,Not Compliant
+DJPb,A.8.34,No Gap,No Gap,No Gap,Compliant
